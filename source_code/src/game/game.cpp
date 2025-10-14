@@ -167,7 +167,6 @@ void Game::mainloop()
             floorCollision = false;
         }
 
-
         // Raycast
 
         for(int i=0;i<colliders_targets.size(); i++)

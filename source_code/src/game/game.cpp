@@ -15,23 +15,111 @@ Game::Game(): graphics(WINDOW_WIDTH, WINDOW_HEIGHT, map_dimmensions), camera(WIN
 
 void Game::initiate()
 {
-    ProjectLoad projectLoad;
+    /////////////////////////////////////////////////////////////////////////////////
+    // Need to add a file loading ability so it can be used to configure engine
+    // Thinking in terms of setting physics
+    /////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+    SceneLoad sceneLoad;
+    std::vector<std::vector<std::string>> files = sceneLoad.loadGamobjects();
+
+
+
+
+
+
+
 
     // !!! THIS SHIT NEEDS TO BE MADE TO BE DYNAMIC !!!
+    // Solutions:
+    // Make a directory for each shader, and then loop through each compare and contrast file name just like models
+    // Also neeed to ability to load overlay shader here instead inside graphics
+    // Option A: Go through every single gameobject file and edit the file change
+    // Option B: scene save work and update that way.
+    // Sigh .... FUCK lmao
+    // Option A seems safest but fuck tedious FML
+    // I need a better way to update for any changes, not efficent
+    // Thinking of making a class / file inside of engine_scene where it acts as gameobject file editor, that it can remain seperate.
+    // Add, Deleting, Editing Section of all gameobjects inside directory
+    // My sucpicion was correct, dam ... Vertex Path will need to be updated because compares to match
+    // Keep FILEPATH and FILENAME seperate data, just in case directory changes
     loaded_shaders.push_back(new Shader("./project/assets/shaders/modelShader.vert", "./project/assets/shaders/modelShader.frag"));
     loaded_shaders.push_back(new Shader("./project/assets/shaders/modelColliderShader.vert", "./project/assets/shaders/modelColliderShader.frag"));
 
+
+
+
+
+
+
     // !!! THIS SHIT NEEDS TO BE MADE TO BE DYNAMIC !!!
+    // Will Need to add save_scene into the code, not  really to save a scene but to change NAME to TAG, basically I am
+    // not trying to edit a shit load of gameobject files.
+    // I need a tag to specify a geometry type such cube sphere cylinder
+    // Also would be nice to add a option to specify if its a geometry that can chose to be a collider.
+    // I feel like this can be done simplified
     loaded_geometry.push_back(new Geometry());
     
 
-    // Need load any overlay textures images
-    // ->
 
-    std::vector<std::vector<std::string>> files = projectLoad.loadGamobjects();
 
-    loaded_models = projectLoad.loadModels();
-    loaded_gameobjects = projectLoad.generateGameobjects(files, loaded_shaders, loaded_models, loaded_geometry, &camera);
+
+
+
+
+
+
+
+
+    ////////////////////////////////////////////////////////
+    // !!! Need to load any overlay textures images here
+    ///////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+    // Forgot it saves but will need to update
+    // Shit a conundrum I need to load and then save
+    // will save it to seperate dir
+    // Also perfect for testing  
+
+
+    
+    //loaded_shaders = sceneLoad.loadShaders();
+    //loaded_geometry = sceneLoad.loadGeometry();
+    loaded_models = sceneLoad.loadModels();
+    loaded_gameobjects = sceneLoad.generateGameobjects(files, loaded_shaders, loaded_models, loaded_geometry, &camera);
+
+
+
+
+
+
+
+
+
+
+
+
+    SceneSave saveScene;
+    saveScene.save(loaded_gameobjects);
+
+
+
+
+
 
     // Categorizing Objects
     for(int i=0; i<loaded_gameobjects.size(); i++)
@@ -113,6 +201,8 @@ void Game::mainloop()
 
     bool floorCollision = false;
 
+    // Need to make a class for audio module inside engine so it can be edited there
+    // and initiated with the shaders and models
     PlaySound(TEXT("./project/assets/audio/stonemans_rave.wav"), NULL, SND_FILENAME | SND_ASYNC);
 
     while (!glfwWindowShouldClose(graphics.window))
@@ -130,6 +220,8 @@ void Game::mainloop()
         // Input
         ///////////////////////////////////////
 
+        // Need to make the input come from the user class instead of being called from here
+        // So I can add more perhiphals
         processInput(graphics.window, loaded_gameobjects[0]);
 
         ///////////////////////////////////////

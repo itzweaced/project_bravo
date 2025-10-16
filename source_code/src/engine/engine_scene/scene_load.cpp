@@ -1,6 +1,44 @@
-#include "project_load.h"
+#include "scene_load.h"
 
-std::string ProjectLoad::loadModelDir(std::string path_root_directory, std::string modelDir){
+std::string SceneLoad::loadShaderVertexDir(std::string path_root_directory, std::string shaderDir){
+
+    std::string shaderVertexPath;
+
+    for (const auto& entry : std::filesystem::directory_iterator(path_root_directory + "/" + shaderDir))
+    {
+        if(std::filesystem::is_regular_file(entry.status())){
+            std::string file = entry.path().filename().string();
+
+            if( file.find(".vert") != std::string::npos)
+            {
+                shaderVertexPath = path_root_directory + "/" + shaderDir + "/" + file;
+            }
+        }
+    }
+
+    return shaderVertexPath;
+};
+
+std::string SceneLoad::loadShaderFragmentDir(std::string path_root_directory, std::string shaderDir){
+
+    std::string shaderFragmentPath;
+
+    for (const auto& entry : std::filesystem::directory_iterator(path_root_directory + "/" + shaderDir))
+    {
+        if(std::filesystem::is_regular_file(entry.status())){
+            std::string file = entry.path().filename().string();
+
+            if( file.find(".frag") != std::string::npos)
+            {
+                shaderFragmentPath = path_root_directory + "/" + shaderDir + "/" + file;
+            }
+        }
+    }
+
+    return shaderFragmentPath;
+};
+
+std::string SceneLoad::loadModelDir(std::string path_root_directory, std::string modelDir){
 
     std::string modelPath;
 
@@ -19,10 +57,32 @@ std::string ProjectLoad::loadModelDir(std::string path_root_directory, std::stri
     return modelPath;
 };
 
-std::vector<Model*> ProjectLoad::loadModels()
+//
+
+// Will need to add a loadShaders()
+std::vector<Shader*> SceneLoad::loadShaders()
+{
+    std::vector<Shader*> loaded_shaders;
+    std::string path_root_directory = "./project/assets/shaders";
+
+    for(const auto& entry : std::filesystem::directory_iterator(path_root_directory))
+    {
+        if(std::filesystem::is_directory(entry.status()))
+        {
+            std::string shaderDir = entry.path().filename().string();
+            std::string shaderVertexPath = loadShaderVertexDir( path_root_directory, shaderDir);
+            std::string shaderFragmentPath = loadShaderFragmentDir( path_root_directory, shaderDir);
+
+            //loaded_shaders.push_back(new Shader(shaderVertexPath, shaderFragmentPath));
+        }
+    }
+    return loaded_shaders;
+}
+  
+
+std::vector<Model*> SceneLoad::loadModels()
 {
     std::vector<Model*> loaded_models;
-
     std::string path_root_directory = "./project/assets/models";
 
     for (const auto& entry : std::filesystem::directory_iterator(path_root_directory))
@@ -30,17 +90,14 @@ std::vector<Model*> ProjectLoad::loadModels()
         if(std::filesystem::is_directory(entry.status()))
         {
             std::string modelDir = entry.path().filename().string();
-            
             std::string modelPath = loadModelDir( path_root_directory, modelDir);
-
             loaded_models.push_back(new Model(modelPath));
         }
     }
-
     return loaded_models;
 };
 
-std::vector<std::vector<std::string>> ProjectLoad::loadGamobjects()
+std::vector<std::vector<std::string>> SceneLoad::loadGamobjects()
 {
     std::vector<std::vector<std::string>> files;
 
@@ -67,7 +124,7 @@ std::vector<std::vector<std::string>> ProjectLoad::loadGamobjects()
     return files;
 };
 
-std::vector<GameObject*> ProjectLoad::generateGameobjects(std::vector<std::vector<std::string>> files, std::vector<Shader*> loaded_shaders, std::vector<Model*> loaded_models, std::vector<Geometry*> loaded_geometry, Camera* camera)
+std::vector<GameObject*> SceneLoad::generateGameobjects(std::vector<std::vector<std::string>> files, std::vector<Shader*> loaded_shaders, std::vector<Model*> loaded_models, std::vector<Geometry*> loaded_geometry, Camera* camera)
 {
     std::vector<GameObject*> gameobjects;
 
@@ -237,6 +294,9 @@ std::vector<GameObject*> ProjectLoad::generateGameobjects(std::vector<std::vecto
                     if(key=="ENABLEBOUNDINGBOX")
                         enableBoundingBox = std::stoi(value);
                 }
+
+                // Need to add UI type reader so I can save it
+                // Ima commit here
  
                 if(type=="overlay")
                 {

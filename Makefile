@@ -23,7 +23,7 @@ EXTERNAL_DEPENDCIES = -I$(glfw_include) -I$(glad_include) -I$(stb_include) -I$(g
 
 path_include_graphics = ./source_code/include/engine/engine_graphics
 path_include_gameobject = ./source_code/include/engine/engine_gameobject
-path_include_project = ./source_code/include/engine/engine_project
+path_include_project = ./source_code/include/engine/engine_scene
 path_include_network = ./source_code/include/engine/engine_network
 path_include_physics = ./source_code/include/engine/engine_physics
 path_include_user = ./source_code/include/engine/engine_user
@@ -51,8 +51,8 @@ path_src_physics = ./source_code/src/engine/engine_physics
 local_src_physics =  $(path_src_physics)/rigid_body.cpp $(path_src_physics)/collider.cpp $(path_src_physics)/collision.cpp $(path_src_physics)/raycast.cpp
 
 
-path_src_engineProject = ./source_code/src/engine/engine_project
-local_src_engineProject = $(path_src_engineProject)/project_save.cpp $(path_src_engineProject)/project_load.cpp
+path_src_engineScene = ./source_code/src/engine/engine_scene
+local_src_engineScene = $(path_src_engineScene)/scene_save.cpp $(path_src_engineScene)/scene_load.cpp
 
 
 path_src_engineNetwork = ./source_code/src/engine/engine_network
@@ -61,7 +61,7 @@ local_src_engineNetwork = $(path_src_engineNetwork)/network_server.cpp
 path_src_engineUser = ./source_code/src/engine/engine_user
 local_src_engineUser = $(path_src_engineUser)/user_input.cpp
 
-ENGINE_SOURCE = $(local_src_graphics_opengl) $(local_src_gameobjects_gameobject) $(local_src_physics) $(local_src_engineProject) $(local_src_engineNetwork) $(local_src_engineUser)
+ENGINE_SOURCE = $(local_src_graphics_opengl) $(local_src_gameobjects_gameobject) $(local_src_physics) $(local_src_engineScene) $(local_src_engineNetwork) $(local_src_engineUser)
 
 path_src_game = ./source_code/src/game
 local_src_game = $(path_src_game)/game.cpp

@@ -60,7 +60,7 @@ void Graphics::test()
 {
     if(initiate()){
         Camera camera(window_width, window_height, glm::vec3(0.0f, 1.0f, -1.0f));
-        Shader ourShader("./project/assets/shaders/modelShader.vert", "./project/assets/shaders/modelShader.frag");
+        Shader ourShader("./project/assets/shaders/modelShader/modelShader.vert", "./project/assets/shaders/modelShader/modelShader.frag");
         Model modelHangar("./project/assets/models/project_bravo_map_hangar/project_bravo_map_hangar.obj");
         
         float degrees = 180.0f;
@@ -143,7 +143,7 @@ void Graphics::render(std::vector<GameObject*> gameobjects, glm::mat4 projection
 
             if(gameobjects[i]->returnEnableBoundingBox() == true)
             {
-                Shader boundingBoxShader("./project/assets/shaders/boundingBoxShader.vert", "./project/assets/shaders/boundingBoxShader.frag");
+                Shader boundingBoxShader("./project/assets/shaders/boundingBoxShader/boundingBoxShader.vert", "./project/assets/shaders/boundingBoxShader/boundingBoxShader.frag");
                 boundingBoxShader.activate();
                 boundingBoxShader.setMat4("projection", projection);
                 boundingBoxShader.setMat4("view", view);
@@ -257,7 +257,7 @@ void Graphics::render(std::vector<GameObject*> gameobjects, glm::mat4 projection
     {
         glm::mat4 proj = glm::ortho(0.0f, (float)window_width, (float)window_height, 0.0f, -1.0f, 1.0f);
 
-        Shader overlayShader("./project/assets/shaders/overlayShader.vert", "./project/assets/shaders/overlayShader.frag");
+        Shader overlayShader("./project/assets/shaders/overlayShader/overlayShader.vert", "./project/assets/shaders/overlayShader/overlayShader.frag");
         overlayShader.activate();
         overlayShader.setMat4("projection", proj );
         overlayShader.setMat4("view",  glm::mat4(1.0f));

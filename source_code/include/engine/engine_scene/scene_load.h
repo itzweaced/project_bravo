@@ -1,5 +1,5 @@
-#ifndef PROJECT_LOAD_H
-#define PROJECT_LOAD_H
+#ifndef SCENE_LOAD_H
+#define SCENE_LOAD_H
 
 #include <string>
 #include <fstream>
@@ -11,12 +11,15 @@
 #include "model.h"
 #include "camera.h"
 
-class ProjectLoad
+class SceneLoad
 {
 private:
+    std::string loadShaderVertexDir(std::string path_root_directory, std::string shaderDir);
+    std::string loadShaderFragmentDir(std::string path_root_directory, std::string shaderDir);
     std::string loadModelDir(std::string path_root_directory, std::string modelDir);
 
 public:
+    std::vector<Shader*> loadShaders();
     std::vector<Model*> loadModels();
     std::vector<std::vector<std::string>> loadGamobjects();
     std::vector<GameObject*> generateGameobjects(std::vector<std::vector<std::string>> files, std::vector<Shader*> loaded_shaders, std::vector<Model*> loaded_models, std::vector<Geometry*> loaded_geometry, Camera* camera);

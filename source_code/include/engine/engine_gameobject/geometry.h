@@ -36,7 +36,9 @@ private:
     void create_cube();
 
 public:
-    Geometry();
+    int assetShaderId;
+
+    Geometry(int setAssetShaderId);
     std::vector<Vertex> returnBoundingBox();
     void draw(Shader &shader);
     void drawWireFrame(Shader &shader);

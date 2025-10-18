@@ -1,9 +1,10 @@
 #include "shader.h"
 
-Shader::Shader( const char* vertexPath, const char* fragmentPath)
+Shader::Shader( const char* vertexPath, const char* fragmentPath, int setAssetShaderId)
 {
     vertex_path = vertexPath;
     fragment_path = fragmentPath;
+    assetShaderId = setAssetShaderId;
 
     std::string vertexCode;
     std::string fragmentCode;

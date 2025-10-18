@@ -48,7 +48,8 @@ private:
     float z_max;
 
 public:
-    Model(std::string const &path);
+    int id;
+    Model(std::string const &path, int setId);
 
     void create_boundingBox();
 public:

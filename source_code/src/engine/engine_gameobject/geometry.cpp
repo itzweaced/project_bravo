@@ -1,8 +1,9 @@
 #include "geometry.h"
 
 
-Geometry::Geometry()
+Geometry::Geometry(int setAssetShaderId)
 {
+    assetShaderId = setAssetShaderId;
     create_cube();
 };
 

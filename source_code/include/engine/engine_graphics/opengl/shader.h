@@ -14,10 +14,12 @@ class Shader
 public:
     unsigned int shaderID;
 
+    int assetShaderId;
+
     const char* vertex_path;
     const char* fragment_path;
 
-    Shader( const char* vertexPath, const char* fragmentPath);
+    Shader( const char* vertexPath, const char* fragmentPath, int setAssetShaderId);
 
     void activate();
 

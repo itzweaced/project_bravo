@@ -26,6 +26,8 @@
 #include "network_server.h"
 #include "user_input.h"
 #include "raycast.h"
+#include "config_load.h"
+
 
 #pragma comment(lib, "winmm.lib")
 

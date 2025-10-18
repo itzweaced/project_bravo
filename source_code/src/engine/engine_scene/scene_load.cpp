@@ -36,6 +36,7 @@ std::vector<GameObject*> SceneLoad::generateGameobjects(std::vector<std::vector<
 
         std::string type = "";
         std::string name = "";
+        std::string tag = "";
 
         std::string pathVertexShader = "";
         std::string pathFragmentShader = "";
@@ -65,6 +66,7 @@ std::vector<GameObject*> SceneLoad::generateGameobjects(std::vector<std::vector<
 
         bool enableRender = false;
         bool enableBoundingBox = false;
+        bool enableCollider = false;
 
         for(int subIndex=0; subIndex<files[index].size(); subIndex++)
         {
@@ -77,8 +79,10 @@ std::vector<GameObject*> SceneLoad::generateGameobjects(std::vector<std::vector<
 
                 if(key=="TYPE")
                     type = value;
-                if(key=="TAG")
+                if(key=="NAME")
                     name = value;
+                if(key=="TAG")
+                    tag = value;
 
                 if(type=="camera")
                 {
@@ -165,6 +169,8 @@ std::vector<GameObject*> SceneLoad::generateGameobjects(std::vector<std::vector<
                         enableRender = std::stoi(value);
                     if(key=="ENABLEBOUNDINGBOX")
                         enableBoundingBox = std::stoi(value);
+                    if(key=="ENABLECOLLIDER")
+                        enableCollider = std::stoi(value);
                 }
 
                 if(type=="overlay")
@@ -202,7 +208,7 @@ std::vector<GameObject*> SceneLoad::generateGameobjects(std::vector<std::vector<
                     if(key=="ENABLEBOUNDINGBOX")
                         enableBoundingBox = std::stoi(value);
                 }
-
+                
             }
         }
 
@@ -212,6 +218,7 @@ std::vector<GameObject*> SceneLoad::generateGameobjects(std::vector<std::vector<
         {
             tempGameObj->setCamera(camera);
             tempGameObj->setName(name);
+            tempGameObj->setTag(tag);
             tempGameObj->setType(type);
             tempGameObj->setPosition(glm::vec3(xPos, yPos, zPos));
             gameobjects.push_back(tempGameObj);
@@ -233,6 +240,7 @@ std::vector<GameObject*> SceneLoad::generateGameobjects(std::vector<std::vector<
             }
 
             tempGameObj->setName(name);
+            tempGameObj->setTag(tag);
             tempGameObj->setType(type);
             tempGameObj->setPosition(glm::vec3(xPos, yPos, zPos));
             tempGameObj->setScale(glm::vec3(xScale, yScale, zScale));
@@ -257,6 +265,7 @@ std::vector<GameObject*> SceneLoad::generateGameobjects(std::vector<std::vector<
             }
 
             tempGameObj->setName(name);
+            tempGameObj->setTag(tag);
             tempGameObj->setType(type);
             tempGameObj->setPosition(glm::vec3(xPos, yPos, zPos));
             tempGameObj->setScale(glm::vec3(xScale, yScale, zScale));
@@ -276,12 +285,14 @@ std::vector<GameObject*> SceneLoad::generateGameobjects(std::vector<std::vector<
 
             tempGameObj->setGeometry(loaded_geometry[0]);
             tempGameObj->setName(name);
+            tempGameObj->setTag(tag);
             tempGameObj->setType(type);
             tempGameObj->setPosition(glm::vec3(xPos, yPos, zPos));
             tempGameObj->setScale(glm::vec3(xScale, yScale, zScale));
             tempGameObj->setRotation(glm::vec3( xRotation, yRotation, zRotation));
             tempGameObj->setEnableRender(enableRender);
             tempGameObj->setEnableBoundingBox(enableBoundingBox);
+            tempGameObj->setEnableCollider(enableCollider);
             tempGameObj->setColor( glm::vec3( colorRed, colorGreen, colorBlue) );
             gameobjects.push_back(tempGameObj);
         }

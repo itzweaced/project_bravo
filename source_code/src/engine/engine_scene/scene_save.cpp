@@ -4,8 +4,14 @@ void SceneSave::save(std::vector<GameObject*> gameobjects)
 {
     for(int i=0; i<gameobjects.size(); i++)
     {
+        std::string filename = "";
         std::string path = "./scene/temp_gameobjects/";
-        std::string filename = "object_" + std::to_string(i) + ".gameobject";
+
+        if(gameobjects[i]->returnName() == "N/A" || gameobjects[i]->returnName() == "")
+            filename = "object_" + std::to_string(i) + ".gameobject";
+        else
+            filename = "object_" + std::to_string(i) + "_" + gameobjects[i]->returnName() + ".gameobject";
+            
         std::ofstream file_write(path + filename);
 
         if(file_write.is_open())
@@ -13,7 +19,8 @@ void SceneSave::save(std::vector<GameObject*> gameobjects)
             if(gameobjects[i]->returnType() == "camera")
             {
                 file_write << "TYPE=" << gameobjects[i]->returnType() << std::endl;
-                file_write << "TAG=" << gameobjects[i]->returnName() << std::endl;
+                file_write << "NAME=N/A" << std::endl;
+                file_write << "TAG=" << gameobjects[i]->returnTag() << std::endl;
 
                 file_write << "POSITIONX=" << gameobjects[i]->returnPosition().x << std::endl;
                 file_write << "POSITIONY=" << gameobjects[i]->returnPosition().y << std::endl;
@@ -27,7 +34,8 @@ void SceneSave::save(std::vector<GameObject*> gameobjects)
             if(gameobjects[i]->returnType() == "model")
             {
                 file_write << "TYPE=" << gameobjects[i]->returnType() << std::endl;
-                file_write << "TAG=" << gameobjects[i]->returnName() << std::endl;
+                file_write << "NAME=N/A" << std::endl;
+                file_write << "TAG=" << gameobjects[i]->returnTag() << std::endl;
                 
                 file_write << "SHADERID=3" << std::endl;
                 file_write << "MODELID=" << gameobjects[i]->returnModel()->id << std::endl;
@@ -51,7 +59,8 @@ void SceneSave::save(std::vector<GameObject*> gameobjects)
             if(gameobjects[i]->returnType() == "geometry")
             {
                 file_write << "TYPE=" << gameobjects[i]->returnType() << std::endl;
-                file_write << "TAG=" << gameobjects[i]->returnName() << std::endl;
+                file_write << "NAME=N/A" << std::endl;
+                file_write << "TAG=" << gameobjects[i]->returnTag() << std::endl;
 
                 file_write << "SHADERID=2" << std::endl;
 
@@ -74,12 +83,14 @@ void SceneSave::save(std::vector<GameObject*> gameobjects)
 
                 file_write << "ENABLERENDER=" << gameobjects[i]->returnEnableRender() << std::endl;
                 file_write << "ENABLEBOUNDINGBOX=" << gameobjects[i]->returnEnableBoundingBox() << std::endl;
-                file_write << "ENABLECOLLIDER=0" << std::endl;
+                file_write << "ENABLECOLLIDER=1" << std::endl;
+
             }
 
             if(gameobjects[i]->returnType() == "overlay")
             {
                 file_write << "TYPE=" << gameobjects[i]->returnType() << std::endl;
+                file_write << "NAME=N/A" << std::endl;
                 file_write << "TAG=" << gameobjects[i]->returnName() << std::endl;
 
                 file_write << "OVERLAYTYPE=model" << std::endl;

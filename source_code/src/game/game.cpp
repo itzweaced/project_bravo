@@ -18,27 +18,15 @@ void Game::initiate()
     ConfigLoad configLoad;
     loaded_models = configLoad.loadModels();
     loaded_shaders = configLoad.loadShaders();
-    
-    // Note to self
-    // name will make the file name cause I am sick of searching a model with filename basically say go fuck yourself XD
-    // Instead of editing "Oh Hell No!" after making a simple change like that. I just need to edit the config files
-
-    // Complaints and Grievances
-    //-------------------------------------------------
-    // - Need to make Geometry dynamic now
-    // - Need to clean up tags
-    // - Need to fix geometry by making by enabling colliders
-    // - Need to migrate Overlay model from Graphics to over here in game, 
-    // the pipeline should be sending data down stream
-    // - Need to fix bounding box it needs use the shader, need to fix
-    // - Need to setup overlay image and then migrate it from graphics to 
-    // here in game.cpp, the pipeline should be sending data down stream
-
     loaded_geometry.push_back(new Geometry(0));
+
 
     SceneLoad sceneLoad;
     std::vector<std::vector<std::string>> files = sceneLoad.loadGamobjects();
     loaded_gameobjects = sceneLoad.generateGameobjects(files, loaded_shaders, loaded_models, loaded_geometry, &camera);
+
+    SceneSave sceneSave;
+    sceneSave.save(loaded_gameobjects);
 };
 
 Game::~Game()
@@ -55,9 +43,6 @@ void Game::play()
 
 void Game::mainloop()
 {
-
-    
-
     while (!glfwWindowShouldClose(graphics.window))
     {
         ///////////////////////////////////////
@@ -95,7 +80,6 @@ void Game::mainloop()
 
     }
 };
-
 
 void Game::processInput(GLFWwindow *window, GameObject *gameobject)
 {

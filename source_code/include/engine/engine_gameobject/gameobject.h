@@ -25,6 +25,7 @@ private:
     int gameobject_id;
     std::string gameobject_type;
     std::string gameobject_name;
+    std::string gameobject_tag;
     glm::vec3 gameobject_position;
     glm::vec3 gameobject_scale;
     glm::vec3 gameobject_rotation;
@@ -34,6 +35,7 @@ private:
 
     bool enableRender;
     bool enableBoundingBox;
+    bool enableCollider;
 
 public:
     void setCamera(Camera* handleCamera);
@@ -44,6 +46,7 @@ public:
     void setID(int id);
     void setType(std::string type);
     void setName(std::string name);
+    void setTag(std::string tag);
     void setPosition(glm::vec3 position);
     void setScale(glm::vec3 scale);
     void setRotation(glm::vec3 rotation);
@@ -52,6 +55,7 @@ public:
     
     void setEnableRender(bool enable);
     void setEnableBoundingBox(bool enable);
+    void setEnableCollider(bool enable);
 
 public:
     Camera* returnCamera();
@@ -62,6 +66,7 @@ public:
     int returnID();
     std::string returnType();
     std::string returnName();
+    std::string returnTag();
     glm::vec3 returnPosition();
     glm::vec3 returnScale();
     glm::vec3 returnRotation();
@@ -70,6 +75,7 @@ public:
 
     bool returnEnableRender();
     bool returnEnableBoundingBox();
+    bool returnEnableCollider();
 };
 
 #endif

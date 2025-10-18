@@ -52,7 +52,7 @@ local_src_physics =  $(path_src_physics)/rigid_body.cpp $(path_src_physics)/coll
 
 
 path_src_engineScene = ./source_code/src/engine/engine_scene
-local_src_engineScene = $(path_src_engineScene)/scene_save.cpp $(path_src_engineScene)/scene_load.cpp
+local_src_engineScene = $(path_src_engineScene)/scene_save.cpp $(path_src_engineScene)/scene_load.cpp $(path_src_engineScene)/config_load.cpp
 
 
 path_src_engineNetwork = ./source_code/src/engine/engine_network

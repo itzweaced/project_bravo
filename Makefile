@@ -59,7 +59,7 @@ path_src_engineNetwork = ./source_code/src/engine/engine_network
 local_src_engineNetwork = $(path_src_engineNetwork)/network_server.cpp
 
 path_src_engineUser = ./source_code/src/engine/engine_user
-local_src_engineUser = $(path_src_engineUser)/user_input.cpp
+local_src_engineUser = $(path_src_engineUser)/keyboard.cpp $(path_src_engineUser)/mouse.cpp
 
 ENGINE_SOURCE = $(local_src_graphics_opengl) $(local_src_gameobjects_gameobject) $(local_src_physics) $(local_src_engineScene) $(local_src_engineNetwork) $(local_src_engineUser)
 

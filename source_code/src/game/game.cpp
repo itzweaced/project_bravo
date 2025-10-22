@@ -1,32 +1,32 @@
 #include "game.h"
 
 
-Game::Game(): graphics(WINDOW_WIDTH, WINDOW_HEIGHT, map_dimmensions), camera(WINDOW_WIDTH, WINDOW_HEIGHT, glm::vec3(0.0f))
+Game::Game(): graphics(WINDOW_WIDTH, WINDOW_HEIGHT, map_dimmensions), camera(WINDOW_WIDTH, WINDOW_HEIGHT, glm::vec3(0.0f)), keyboard(&graphics), mouse(&graphics, WINDOW_WIDTH, WINDOW_HEIGHT)
 {
     if(graphics.initiate())
     {
         glfwSetWindowUserPointer(graphics.window, this);
-        glfwSetCursorPosCallback(graphics.window, mouse_callback);
-        glfwSetScrollCallback(graphics.window, scroll_callback);
+        glfwSetCursorPosCallback(graphics.window, mouse.mouse_callback);
+        glfwSetScrollCallback(graphics.window, mouse.scroll_callback);
 
         initiate();
     }
+    
 };
 
 void Game::initiate()
 {
+
+    // Loading Assets
     ConfigLoad configLoad;
     loaded_models = configLoad.loadModels();
     loaded_shaders = configLoad.loadShaders();
     loaded_geometry.push_back(new Geometry(0));
 
-
+    // Building Scene
     SceneLoad sceneLoad;
     std::vector<std::vector<std::string>> files = sceneLoad.loadGamobjects();
     loaded_gameobjects = sceneLoad.generateGameobjects(files, loaded_shaders, loaded_models, loaded_geometry, &camera);
-
-    SceneSave sceneSave;
-    sceneSave.save(loaded_gameobjects);
 };
 
 Game::~Game()
@@ -48,7 +48,7 @@ void Game::mainloop()
         ///////////////////////////////////////
         // Frame Speed
         ///////////////////////////////////////
-        
+
         float currentFrameTime = glfwGetTime();
         graphics.deltaTime = currentFrameTime - graphics.lastFrameTime;
         graphics.lastFrameTime = currentFrameTime;
@@ -57,8 +57,10 @@ void Game::mainloop()
         ///////////////////////////////////////
         // Input
         ///////////////////////////////////////
-        processInput(graphics.window, loaded_gameobjects[0]);
 
+        processInputKeyboard(graphics.window, loaded_gameobjects[0]);
+        processInputMouse();
+        
         ///////////////////////////////////////
         // Camera
         ///////////////////////////////////////
@@ -70,63 +72,50 @@ void Game::mainloop()
         ///////////////////////////////////////
         // Logic
         ///////////////////////////////////////
-
-
+        
 
         ///////////////////////////////////////
         // Render
         ///////////////////////////////////////
         graphics.render(loaded_gameobjects, projection, view);
 
+
     }
 };
 
-void Game::processInput(GLFWwindow *window, GameObject *gameobject)
+
+void Game::processInputKeyboard(GLFWwindow *window, GameObject *gameobject)
 {
     const float speed = 2.0f;
     const float climbSpeed = 3.0f;
 
-    if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
+    if (keyboard.inputKeyboard() == 130)
         gameobject->setPosition( glm::vec3( gameobject->returnPosition().x + (speed * camera.camera_front.x), gameobject->returnPosition().y + (speed * camera.camera_front.y), gameobject->returnPosition().z + (speed * camera.camera_front.z) ) );
-    if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
+    if (keyboard.inputKeyboard() == 144)
         gameobject->setPosition(glm::vec3( gameobject->returnPosition().x - (speed * camera.camera_front.x), gameobject->returnPosition().y - (speed * camera.camera_front.y), gameobject->returnPosition().z - (speed * camera.camera_front.z) ) );
-    if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
+    if (keyboard.inputKeyboard() == 143)
         gameobject->setPosition(gameobject->returnPosition() - (speed * glm::normalize(glm::cross(camera.camera_front, camera.camera_up))) );
-    if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
+    if (keyboard.inputKeyboard() == 145)
         gameobject->setPosition(gameobject->returnPosition() + (speed * glm::normalize(glm::cross(camera.camera_front, camera.camera_up))) );
-
-    if (glfwGetKey(window, GLFW_KEY_SPACE) == GLFW_PRESS){
+    if (keyboard.inputKeyboard() == 169)
         gameobject->setPosition(glm::vec3( gameobject->returnPosition().x, gameobject->returnPosition().y + climbSpeed , gameobject->returnPosition().z));
-    }
-    if(glfwGetKey(window, GLFW_KEY_LEFT_ALT) == GLFW_PRESS)
+    if (keyboard.inputKeyboard() == 167)
         gameobject->setPosition(glm::vec3( gameobject->returnPosition().x, gameobject->returnPosition().y - climbSpeed , gameobject->returnPosition().z));
-
-    if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
+    if (keyboard.inputKeyboard() == 101)
         glfwSetWindowShouldClose(window, true);
+
 };
 
-
-void Game::mouse_callback(GLFWwindow *window, double xPos, double yPos)
+void Game::processInputMouse()
 {
-    Game* game = static_cast<Game*>(glfwGetWindowUserPointer(window));
-    
-    if(game->mouseLeftClick)
+    if(Mouse::cursor_active)
     {
-        game->lastX = xPos;
-        game->lastY = yPos;
-        game->mouseLeftClick = false;
+        camera.processMouseInput(Mouse::cursor_xPos, Mouse::cursor_yPos);
+        Mouse::cursor_active = false;
     }
-
-    float xoffset = xPos - game->lastX;
-    float yoffset = game->lastY - yPos;
-
-    game->lastX = xPos;
-    game->lastY = yPos;
-    game->camera.processMouseInput(xoffset, yoffset);
-};
-
-void Game::scroll_callback(GLFWwindow *window, double xoffset, double yoffset)
-{
-    Game* game = static_cast<Game*>(glfwGetWindowUserPointer(window));
-    game->camera.processMouseScroll(float(yoffset));
-};
+    if(Mouse::scroll_active)
+    {
+        camera.processMouseScroll(float(Mouse::scroll_yPos));
+        Mouse::scroll_active = false;
+    }
+}

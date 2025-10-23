@@ -1,4 +1,7 @@
-# Layout
+# Note
+- Best to open in a IDE or on Github's Code tab
+
+# Project Layout
 
 source_code
 |

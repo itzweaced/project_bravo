@@ -8,7 +8,7 @@
 #include <vector>
 #include <filesystem>
 
-#include "gameobject.h"
+#include "entity.h"
 #include "shader.h"
 #include "model.h"
 #include "camera.h"

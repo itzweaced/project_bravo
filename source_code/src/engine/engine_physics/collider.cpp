@@ -1,8 +1,8 @@
 #include "collider.h"
 
-Collider::Collider(GameObject* setGameobject, Model* setModel, Geometry* setGeometry)
+Collider::Collider(Entity* setEntity, Model* setModel, Geometry* setGeometry)
 { 
-    gameobject = setGameobject;
+    entity = setEntity;
 
     if(setModel != nullptr)
     {
@@ -146,11 +146,11 @@ std::vector<Vertex> Collider::returnAABB()
     float pi = 3.14159265358979323846;
 
     glm::mat4 model = glm::mat4(1.0f);
-    model = glm::translate(model, gameobject->returnPosition() );
-    model = glm::rotate(model, gameobject->returnRotation().x * ( pi/180) , glm::vec3(1.0f, 0.0f, 0.0f));
-    model = glm::rotate(model, gameobject->returnRotation().y * ( pi/180) , glm::vec3(0.0f, 1.0f, 0.0f));
-    model = glm::rotate(model, gameobject->returnRotation().z * ( pi/180) , glm::vec3(0.0f, 0.0f, 1.0f));
-    model = glm::scale(model, gameobject->returnScale());
+    model = glm::translate(model, entity->returnPosition() );
+    model = glm::rotate(model, entity->returnRotation().x * ( pi/180) , glm::vec3(1.0f, 0.0f, 0.0f));
+    model = glm::rotate(model, entity->returnRotation().y * ( pi/180) , glm::vec3(0.0f, 1.0f, 0.0f));
+    model = glm::rotate(model, entity->returnRotation().z * ( pi/180) , glm::vec3(0.0f, 0.0f, 1.0f));
+    model = glm::scale(model, entity->returnScale());
     
     std::vector<Vertex> tempAABB;
 
@@ -174,17 +174,17 @@ std::vector<ColliderFace> Collider::returnColliderMesh()
     float pi = 3.14159265358979323846;
 
     glm::mat4 model = glm::mat4(1.0f);
-    model = glm::translate(model, gameobject->returnPosition() );
-    model = glm::rotate(model, gameobject->returnRotation().x * ( pi/180) , glm::vec3(1.0f, 0.0f, 0.0f));
-    model = glm::rotate(model, gameobject->returnRotation().y * ( pi/180) , glm::vec3(0.0f, 1.0f, 0.0f));
-    model = glm::rotate(model, gameobject->returnRotation().z * ( pi/180) , glm::vec3(0.0f, 0.0f, 1.0f));
-    model = glm::scale(model, gameobject->returnScale());
+    model = glm::translate(model, entity->returnPosition() );
+    model = glm::rotate(model, entity->returnRotation().x * ( pi/180) , glm::vec3(1.0f, 0.0f, 0.0f));
+    model = glm::rotate(model, entity->returnRotation().y * ( pi/180) , glm::vec3(0.0f, 1.0f, 0.0f));
+    model = glm::rotate(model, entity->returnRotation().z * ( pi/180) , glm::vec3(0.0f, 0.0f, 1.0f));
+    model = glm::scale(model, entity->returnScale());
 
     glm::mat4 normalModel = glm::mat4(1.0f);
-    normalModel = glm::rotate(normalModel, gameobject->returnRotation().x * ( pi/180) , glm::vec3(1.0f, 0.0f, 0.0f));
-    normalModel = glm::rotate(normalModel, gameobject->returnRotation().y * ( pi/180) , glm::vec3(0.0f, 1.0f, 0.0f));
-    normalModel = glm::rotate(normalModel, gameobject->returnRotation().z * ( pi/180) , glm::vec3(0.0f, 0.0f, 1.0f));
-    normalModel = glm::scale(normalModel, gameobject->returnScale());
+    normalModel = glm::rotate(normalModel, entity->returnRotation().x * ( pi/180) , glm::vec3(1.0f, 0.0f, 0.0f));
+    normalModel = glm::rotate(normalModel, entity->returnRotation().y * ( pi/180) , glm::vec3(0.0f, 1.0f, 0.0f));
+    normalModel = glm::rotate(normalModel, entity->returnRotation().z * ( pi/180) , glm::vec3(0.0f, 0.0f, 1.0f));
+    normalModel = glm::scale(normalModel, entity->returnScale());
     glm::mat3 normalMatrix = glm::transpose(glm::inverse(glm::mat3(normalModel)));
 
     std::vector<ColliderFace> worldCollider;

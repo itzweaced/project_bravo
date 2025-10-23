@@ -5,7 +5,7 @@
 
 #include <iostream>
 #include <string>
-#include <gameobject.h>
+#include <entity.h>
 #include <model.h>
 #include <geometry.h>
 #include <collider.h>

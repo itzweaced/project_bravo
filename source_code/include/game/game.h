@@ -16,7 +16,7 @@
 #include "shader.h"
 #include "model.h"
 #include "graphics.h"
-#include "gameobject.h"
+#include "entity.h"
 #include "rigid_body.h"
 #include "collider.h"
 #include "collision.h"
@@ -46,7 +46,7 @@ private:
     std::vector<Shader*> loaded_shaders;
     std::vector<Model*> loaded_models;
     std::vector<Geometry*> loaded_geometry;
-    std::vector<GameObject*> loaded_gameobjects;
+    std::vector<Entity*> loaded_entities;
 
 
 private:
@@ -65,7 +65,7 @@ private:
     void initiate();
     void mainloop();
 
-    void processInputKeyboard(GLFWwindow *window, GameObject *gameobject);
+    void processInputKeyboard(GLFWwindow *window, Entity *entity);
     void processInputMouse();
 
 

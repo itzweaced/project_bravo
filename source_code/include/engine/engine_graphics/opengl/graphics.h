@@ -13,7 +13,7 @@
 #include "shader.h"
 #include "camera.h"
 #include "model.h"
-#include "gameobject.h"
+#include "entity.h"
 
 #include "geometry.h"
 
@@ -45,7 +45,7 @@ public:
 
     int initiate();
     void test();
-    void render(std::vector<GameObject*> gameobjects, glm::mat4 projection, glm::mat4 view);
+    void render(std::vector<Entity*> entitys, glm::mat4 projection, glm::mat4 view);
 
 };
 

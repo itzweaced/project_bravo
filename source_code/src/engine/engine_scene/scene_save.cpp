@@ -1,122 +1,122 @@
 #include "scene_save.h"
 
-void SceneSave::save(std::vector<GameObject*> gameobjects)
+void SceneSave::save(std::vector<Entity*> entities)
 {
-    for(int i=0; i<gameobjects.size(); i++)
+    for(int i=0; i<entities.size(); i++)
     {
         std::string filename = "";
-        std::string path = "./scene/temp_gameobjects/";
+        std::string path = "./scene/temp_entities/";
 
-        if(gameobjects[i]->returnName() == "N/A" || gameobjects[i]->returnName() == "")
-            filename = "object_" + std::to_string(i) + ".gameobject";
+        if(entities[i]->returnName() == "N/A" || entities[i]->returnName() == "")
+            filename = "object_" + std::to_string(i) + ".entity";
         else
-            filename = "object_" + std::to_string(i) + "_" + gameobjects[i]->returnName() + ".gameobject";
+            filename = "object_" + std::to_string(i) + "_" + entities[i]->returnName() + ".entity";
             
         std::ofstream file_write(path + filename);
 
         if(file_write.is_open())
         {
-            if(gameobjects[i]->returnType() == "camera")
+            if(entities[i]->returnType() == "camera")
             {
-                file_write << "TYPE=" << gameobjects[i]->returnType() << std::endl;
+                file_write << "TYPE=" << entities[i]->returnType() << std::endl;
                 file_write << "NAME=N/A" << std::endl;
-                file_write << "TAG=" << gameobjects[i]->returnTag() << std::endl;
+                file_write << "TAG=" << entities[i]->returnTag() << std::endl;
 
-                file_write << "POSITIONX=" << gameobjects[i]->returnPosition().x << std::endl;
-                file_write << "POSITIONY=" << gameobjects[i]->returnPosition().y << std::endl;
-                file_write << "POSITIONZ=" << gameobjects[i]->returnPosition().z << std::endl;
+                file_write << "POSITIONX=" << entities[i]->returnPosition().x << std::endl;
+                file_write << "POSITIONY=" << entities[i]->returnPosition().y << std::endl;
+                file_write << "POSITIONZ=" << entities[i]->returnPosition().z << std::endl;
 
-                file_write << "ROTATIONX=" << gameobjects[i]->returnRotation().x << std::endl;
-                file_write << "ROTATIONY=" << gameobjects[i]->returnRotation().y << std::endl;
-                file_write << "ROTATIONZ=" << gameobjects[i]->returnRotation().z << std::endl;
+                file_write << "ROTATIONX=" << entities[i]->returnRotation().x << std::endl;
+                file_write << "ROTATIONY=" << entities[i]->returnRotation().y << std::endl;
+                file_write << "ROTATIONZ=" << entities[i]->returnRotation().z << std::endl;
             }
 
-            if(gameobjects[i]->returnType() == "model")
+            if(entities[i]->returnType() == "model")
             {
-                file_write << "TYPE=" << gameobjects[i]->returnType() << std::endl;
+                file_write << "TYPE=" << entities[i]->returnType() << std::endl;
                 file_write << "NAME=N/A" << std::endl;
-                file_write << "TAG=" << gameobjects[i]->returnTag() << std::endl;
+                file_write << "TAG=" << entities[i]->returnTag() << std::endl;
                 
                 file_write << "SHADERID=3" << std::endl;
-                file_write << "MODELID=" << gameobjects[i]->returnModel()->id << std::endl;
+                file_write << "MODELID=" << entities[i]->returnModel()->id << std::endl;
 
-                file_write << "POSITIONX=" << gameobjects[i]->returnPosition().x << std::endl;
-                file_write << "POSITIONY=" << gameobjects[i]->returnPosition().y << std::endl;
-                file_write << "POSITIONZ=" << gameobjects[i]->returnPosition().z << std::endl;
+                file_write << "POSITIONX=" << entities[i]->returnPosition().x << std::endl;
+                file_write << "POSITIONY=" << entities[i]->returnPosition().y << std::endl;
+                file_write << "POSITIONZ=" << entities[i]->returnPosition().z << std::endl;
 
-                file_write << "SCALEX=" << gameobjects[i]->returnScale().x << std::endl;
-                file_write << "SCALEY=" << gameobjects[i]->returnScale().y << std::endl;
-                file_write << "SCALEZ=" << gameobjects[i]->returnScale().z << std::endl;
+                file_write << "SCALEX=" << entities[i]->returnScale().x << std::endl;
+                file_write << "SCALEY=" << entities[i]->returnScale().y << std::endl;
+                file_write << "SCALEZ=" << entities[i]->returnScale().z << std::endl;
                 
-                file_write << "ROTATIONX=" << gameobjects[i]->returnRotation().x << std::endl;
-                file_write << "ROTATIONY=" << gameobjects[i]->returnRotation().y << std::endl;
-                file_write << "ROTATIONZ=" << gameobjects[i]->returnRotation().z << std::endl;
+                file_write << "ROTATIONX=" << entities[i]->returnRotation().x << std::endl;
+                file_write << "ROTATIONY=" << entities[i]->returnRotation().y << std::endl;
+                file_write << "ROTATIONZ=" << entities[i]->returnRotation().z << std::endl;
 
-                file_write << "ENABLERENDER=" << gameobjects[i]->returnEnableRender() << std::endl;
-                file_write << "ENABLEBOUNDINGBOX=" << gameobjects[i]->returnEnableBoundingBox() << std::endl;
+                file_write << "ENABLERENDER=" << entities[i]->returnEnableRender() << std::endl;
+                file_write << "ENABLEBOUNDINGBOX=" << entities[i]->returnEnableBoundingBox() << std::endl;
             }
 
-            if(gameobjects[i]->returnType() == "geometry")
+            if(entities[i]->returnType() == "geometry")
             {
-                file_write << "TYPE=" << gameobjects[i]->returnType() << std::endl;
+                file_write << "TYPE=" << entities[i]->returnType() << std::endl;
                 file_write << "NAME=N/A" << std::endl;
-                file_write << "TAG=" << gameobjects[i]->returnTag() << std::endl;
+                file_write << "TAG=" << entities[i]->returnTag() << std::endl;
 
                 file_write << "SHADERID=2" << std::endl;
 
-                file_write << "GEOMETRYTYPE=" << gameobjects[i]->returnGeometry()->returnGeometryType() << std::endl;
-                file_write << "GEOMETRYCOLORRED=" << gameobjects[i]->returnColor().x << std::endl;
-                file_write << "GEOMETRYCOLORGREEN=" << gameobjects[i]->returnColor().y << std::endl;
-                file_write << "GEOMETRYCOLORBLUE=" << gameobjects[i]->returnColor().z << std::endl;
+                file_write << "GEOMETRYTYPE=" << entities[i]->returnGeometry()->returnGeometryType() << std::endl;
+                file_write << "GEOMETRYCOLORRED=" << entities[i]->returnColor().x << std::endl;
+                file_write << "GEOMETRYCOLORGREEN=" << entities[i]->returnColor().y << std::endl;
+                file_write << "GEOMETRYCOLORBLUE=" << entities[i]->returnColor().z << std::endl;
                 
-                file_write << "POSITIONX=" << gameobjects[i]->returnPosition().x << std::endl;
-                file_write << "POSITIONY=" << gameobjects[i]->returnPosition().y << std::endl;
-                file_write << "POSITIONZ=" << gameobjects[i]->returnPosition().z << std::endl;
+                file_write << "POSITIONX=" << entities[i]->returnPosition().x << std::endl;
+                file_write << "POSITIONY=" << entities[i]->returnPosition().y << std::endl;
+                file_write << "POSITIONZ=" << entities[i]->returnPosition().z << std::endl;
 
-                file_write << "SCALEX=" << gameobjects[i]->returnScale().x << std::endl;
-                file_write << "SCALEY=" << gameobjects[i]->returnScale().y << std::endl;
-                file_write << "SCALEZ=" << gameobjects[i]->returnScale().z << std::endl;
+                file_write << "SCALEX=" << entities[i]->returnScale().x << std::endl;
+                file_write << "SCALEY=" << entities[i]->returnScale().y << std::endl;
+                file_write << "SCALEZ=" << entities[i]->returnScale().z << std::endl;
 
-                file_write << "ROTATIONX=" << gameobjects[i]->returnRotation().x << std::endl;
-                file_write << "ROTATIONY=" << gameobjects[i]->returnRotation().y << std::endl;
-                file_write << "ROTATIONZ=" << gameobjects[i]->returnRotation().z << std::endl;
+                file_write << "ROTATIONX=" << entities[i]->returnRotation().x << std::endl;
+                file_write << "ROTATIONY=" << entities[i]->returnRotation().y << std::endl;
+                file_write << "ROTATIONZ=" << entities[i]->returnRotation().z << std::endl;
 
-                file_write << "ENABLERENDER=" << gameobjects[i]->returnEnableRender() << std::endl;
-                file_write << "ENABLEBOUNDINGBOX=" << gameobjects[i]->returnEnableBoundingBox() << std::endl;
+                file_write << "ENABLERENDER=" << entities[i]->returnEnableRender() << std::endl;
+                file_write << "ENABLEBOUNDINGBOX=" << entities[i]->returnEnableBoundingBox() << std::endl;
                 file_write << "ENABLECOLLIDER=1" << std::endl;
 
             }
 
-            if(gameobjects[i]->returnType() == "overlay")
+            if(entities[i]->returnType() == "overlay")
             {
-                file_write << "TYPE=" << gameobjects[i]->returnType() << std::endl;
+                file_write << "TYPE=" << entities[i]->returnType() << std::endl;
                 file_write << "NAME=N/A" << std::endl;
-                file_write << "TAG=" << gameobjects[i]->returnName() << std::endl;
+                file_write << "TAG=" << entities[i]->returnName() << std::endl;
 
                 file_write << "OVERLAYTYPE=model" << std::endl;
 
                 file_write << "VERTEXPATH=./project/assets/shaders/"  << std::endl;
-                file_write << "VERTEXFILENAME=" << gameobjects[i]->returnShader()->vertex_path << std::endl;
+                file_write << "VERTEXFILENAME=" << entities[i]->returnShader()->vertex_path << std::endl;
                 file_write << "FRAGMENTPATH=./project/assets/shaders/" << std::endl;
-                file_write << "FRAGMENTFILENAME=" << gameobjects[i]->returnShader()->fragment_path << std::endl;
+                file_write << "FRAGMENTFILENAME=" << entities[i]->returnShader()->fragment_path << std::endl;
 
                 file_write << "MODELPATH=./project/assets/models/" << std::endl;
-                file_write << "MODELFILENAME=" << gameobjects[i]->returnModel()->returnModelPath() << std::endl;
+                file_write << "MODELFILENAME=" << entities[i]->returnModel()->returnModelPath() << std::endl;
 
-                file_write << "POSITIONX=" << gameobjects[i]->returnPosition().x << std::endl;
-                file_write << "POSITIONY=" << gameobjects[i]->returnPosition().y << std::endl;
-                file_write << "POSITIONZ=" << gameobjects[i]->returnPosition().z << std::endl;
+                file_write << "POSITIONX=" << entities[i]->returnPosition().x << std::endl;
+                file_write << "POSITIONY=" << entities[i]->returnPosition().y << std::endl;
+                file_write << "POSITIONZ=" << entities[i]->returnPosition().z << std::endl;
 
-                file_write << "SCALEX=" << gameobjects[i]->returnScale().x << std::endl;
-                file_write << "SCALEY=" << gameobjects[i]->returnScale().y << std::endl;
-                file_write << "SCALEZ=" << gameobjects[i]->returnScale().z << std::endl;
+                file_write << "SCALEX=" << entities[i]->returnScale().x << std::endl;
+                file_write << "SCALEY=" << entities[i]->returnScale().y << std::endl;
+                file_write << "SCALEZ=" << entities[i]->returnScale().z << std::endl;
                 
-                file_write << "ROTATIONX=" << gameobjects[i]->returnRotation().x << std::endl;
-                file_write << "ROTATIONY=" << gameobjects[i]->returnRotation().y << std::endl;
-                file_write << "ROTATIONZ=" << gameobjects[i]->returnRotation().z << std::endl;
+                file_write << "ROTATIONX=" << entities[i]->returnRotation().x << std::endl;
+                file_write << "ROTATIONY=" << entities[i]->returnRotation().y << std::endl;
+                file_write << "ROTATIONZ=" << entities[i]->returnRotation().z << std::endl;
 
-                file_write << "ENABLERENDER=" << gameobjects[i]->returnEnableRender() << std::endl;
-                file_write << "ENABLEBOUNDINGBOX=" << gameobjects[i]->returnEnableBoundingBox() << std::endl;
+                file_write << "ENABLERENDER=" << entities[i]->returnEnableRender() << std::endl;
+                file_write << "ENABLEBOUNDINGBOX=" << entities[i]->returnEnableBoundingBox() << std::endl;
             }
 
             file_write.close();

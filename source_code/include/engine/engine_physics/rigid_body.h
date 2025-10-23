@@ -1,15 +1,15 @@
 #ifndef RIGID_BODY_H
 #define RIGID_BODY_H
 
-#include "gameobject.h"
+#include "entity.h"
 
 class RigidBody
 {
 private:
-    GameObject* gameobject;
+    Entity* entity;
 
 public:
-    RigidBody(GameObject* gameObject);
+    RigidBody(Entity* entity);
 
 public:
     void applySimpleForce(glm::vec3 setVelocity);

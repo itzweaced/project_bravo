@@ -2,7 +2,7 @@
 #define COLLIDER_H
 
 #include <vector>
-#include "gameobject.h"
+#include "entity.h"
 #include "model.h"
 #include "geometry.h"
 #include "mesh.h"
@@ -20,7 +20,7 @@ struct ColliderFace
 class Collider
 {
 private:
-    GameObject* gameobject;
+    Entity* entity;
     Model* model;
     Geometry* geometry;
 
@@ -32,7 +32,7 @@ private:
     std::vector<ColliderFace> colliderMesh;
 
 public:
-    Collider(GameObject* setGameobject, Model* setModel, Geometry* setGeometry);
+    Collider(Entity* setEntity, Model* setModel, Geometry* setGeometry);
     
     std::vector<Vertex> returnAABB();
     glm::vec3 returnBoundingSphereCenter();

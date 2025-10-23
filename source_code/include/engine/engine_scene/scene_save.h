@@ -6,14 +6,14 @@
 #include <filesystem>
 #include <vector>
 
-#include "gameobject.h"
+#include "entity.h"
 #include "shader.h"
 #include "model.h"
 
 class SceneSave
 {
 public:
-    void save(std::vector<GameObject*> gameobjects);
+    void save(std::vector<Entity*> entity);
 };
 
 

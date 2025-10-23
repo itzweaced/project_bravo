@@ -25,14 +25,17 @@ void Game::initiate()
 
     // Building Scene
     SceneLoad sceneLoad;
-    std::vector<std::vector<std::string>> files = sceneLoad.loadGamobjects();
-    loaded_gameobjects = sceneLoad.generateGameobjects(files, loaded_shaders, loaded_models, loaded_geometry, &camera);
+    std::vector<std::vector<std::string>> files = sceneLoad.loadEntities();
+    loaded_entities = sceneLoad.generateEntities(files, loaded_shaders, loaded_models, loaded_geometry, &camera);
+
+    SceneSave sceneSave;
+    sceneSave.save(loaded_entities);
 };
 
 Game::~Game()
 {
-    for(int i=0; i<loaded_gameobjects.size(); i++)
-        delete loaded_gameobjects[i];
+    for(int i=0; i<loaded_entities.size(); i++)
+        delete loaded_entities[i];
     glfwTerminate();
 };
 
@@ -58,14 +61,14 @@ void Game::mainloop()
         // Input
         ///////////////////////////////////////
 
-        processInputKeyboard(graphics.window, loaded_gameobjects[0]);
+        processInputKeyboard(graphics.window, loaded_entities[0]);
         processInputMouse();
         
         ///////////////////////////////////////
         // Camera
         ///////////////////////////////////////
 
-        camera.setCameraPosition(loaded_gameobjects[0]->returnPosition() / map_dimmensions);
+        camera.setCameraPosition(loaded_entities[0]->returnPosition() / map_dimmensions);
         glm::mat4 projection = glm::perspective(glm::radians(camera.camera_fov), (float)WINDOW_WIDTH / (float)WINDOW_HEIGHT, 0.01f, 150.0f);
         glm::mat4 view = camera.getViewMatrix();
 
@@ -77,30 +80,30 @@ void Game::mainloop()
         ///////////////////////////////////////
         // Render
         ///////////////////////////////////////
-        graphics.render(loaded_gameobjects, projection, view);
+        graphics.render(loaded_entities, projection, view);
 
 
     }
 };
 
 
-void Game::processInputKeyboard(GLFWwindow *window, GameObject *gameobject)
+void Game::processInputKeyboard(GLFWwindow *window, Entity *entity)
 {
     const float speed = 2.0f;
     const float climbSpeed = 3.0f;
 
     if (keyboard.inputKeyboard() == 130)
-        gameobject->setPosition( glm::vec3( gameobject->returnPosition().x + (speed * camera.camera_front.x), gameobject->returnPosition().y + (speed * camera.camera_front.y), gameobject->returnPosition().z + (speed * camera.camera_front.z) ) );
+        entity->setPosition( glm::vec3( entity->returnPosition().x + (speed * camera.camera_front.x), entity->returnPosition().y + (speed * camera.camera_front.y), entity->returnPosition().z + (speed * camera.camera_front.z) ) );
     if (keyboard.inputKeyboard() == 144)
-        gameobject->setPosition(glm::vec3( gameobject->returnPosition().x - (speed * camera.camera_front.x), gameobject->returnPosition().y - (speed * camera.camera_front.y), gameobject->returnPosition().z - (speed * camera.camera_front.z) ) );
+        entity->setPosition(glm::vec3( entity->returnPosition().x - (speed * camera.camera_front.x), entity->returnPosition().y - (speed * camera.camera_front.y), entity->returnPosition().z - (speed * camera.camera_front.z) ) );
     if (keyboard.inputKeyboard() == 143)
-        gameobject->setPosition(gameobject->returnPosition() - (speed * glm::normalize(glm::cross(camera.camera_front, camera.camera_up))) );
+        entity->setPosition(entity->returnPosition() - (speed * glm::normalize(glm::cross(camera.camera_front, camera.camera_up))) );
     if (keyboard.inputKeyboard() == 145)
-        gameobject->setPosition(gameobject->returnPosition() + (speed * glm::normalize(glm::cross(camera.camera_front, camera.camera_up))) );
+        entity->setPosition(entity->returnPosition() + (speed * glm::normalize(glm::cross(camera.camera_front, camera.camera_up))) );
     if (keyboard.inputKeyboard() == 169)
-        gameobject->setPosition(glm::vec3( gameobject->returnPosition().x, gameobject->returnPosition().y + climbSpeed , gameobject->returnPosition().z));
+        entity->setPosition(glm::vec3( entity->returnPosition().x, entity->returnPosition().y + climbSpeed , entity->returnPosition().z));
     if (keyboard.inputKeyboard() == 167)
-        gameobject->setPosition(glm::vec3( gameobject->returnPosition().x, gameobject->returnPosition().y - climbSpeed , gameobject->returnPosition().z));
+        entity->setPosition(glm::vec3( entity->returnPosition().x, entity->returnPosition().y - climbSpeed , entity->returnPosition().z));
     if (keyboard.inputKeyboard() == 101)
         glfwSetWindowShouldClose(window, true);
 

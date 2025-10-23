@@ -1,5 +1,5 @@
-#ifndef GAMEOBJECT_H
-#define GAMEOBJECT_H
+#ifndef ENTITY_H
+#define ENTITY_H
 
 #include <iostream>
 #include <string>
@@ -13,25 +13,25 @@
 #include "geometry.h"
 
 
-class GameObject
+class Entity
 {
 
 private:
-    Camera* gameobject_camera;
-    Shader* gameobject_shader;
-    Model* gameobject_model;
-    Geometry* gameobject_geometry;
+    Camera* entity_camera;
+    Shader* entity_shader;
+    Model* entity_model;
+    Geometry* entity_geometry;
 
-    int gameobject_id;
-    std::string gameobject_type;
-    std::string gameobject_name;
-    std::string gameobject_tag;
-    glm::vec3 gameobject_position;
-    glm::vec3 gameobject_scale;
-    glm::vec3 gameobject_rotation;
-    glm::vec3 gameobject_velocity;
+    int entity_id;
+    std::string entity_type;
+    std::string entity_name;
+    std::string entity_tag;
+    glm::vec3 entity_position;
+    glm::vec3 entity_scale;
+    glm::vec3 entity_rotation;
+    glm::vec3 entity_velocity;
 
-    glm::vec3 gameobject_color;
+    glm::vec3 entity_color;
 
     bool enableRender;
     bool enableBoundingBox;

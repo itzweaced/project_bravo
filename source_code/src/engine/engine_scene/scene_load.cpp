@@ -1,14 +1,14 @@
 #include "scene_load.h"
 
-std::vector<std::vector<std::string>> SceneLoad::loadGamobjects()
+std::vector<std::vector<std::string>> SceneLoad::loadEntities()
 {
     std::vector<std::vector<std::string>> files;
 
-    for (const auto& entry : std::filesystem::directory_iterator("./scene/gameobjects"))
+    for (const auto& entry : std::filesystem::directory_iterator("./scene/entities"))
     {
         std::vector<std::string> file;
         
-        std::ifstream file_read("./scene/gameobjects/" + entry.path().filename().string());
+        std::ifstream file_read("./scene/entities/" + entry.path().filename().string());
         if(file_read.is_open())
         {
             std::string line;
@@ -19,7 +19,7 @@ std::vector<std::vector<std::string>> SceneLoad::loadGamobjects()
         }
         else
         {
-            std::cerr << "ERROR::LOADING_GAMEOBJECTS" << std::endl;
+            std::cerr << "ERROR::LOADING_Entity" << std::endl;
         }
         files.push_back(file);
     }
@@ -27,9 +27,9 @@ std::vector<std::vector<std::string>> SceneLoad::loadGamobjects()
     return files;
 };
 
-std::vector<GameObject*> SceneLoad::generateGameobjects(std::vector<std::vector<std::string>> files, std::vector<Shader*> loaded_shaders, std::vector<Model*> loaded_models, std::vector<Geometry*> loaded_geometry, Camera* camera)
+std::vector<Entity*> SceneLoad::generateEntities(std::vector<std::vector<std::string>> files, std::vector<Shader*> loaded_shaders, std::vector<Model*> loaded_models, std::vector<Geometry*> loaded_geometry, Camera* camera)
 {
-    std::vector<GameObject*> gameobjects;
+    std::vector<Entity*> entities;
 
     for(int index=0; index < files.size() ; index++)
     {
@@ -212,7 +212,7 @@ std::vector<GameObject*> SceneLoad::generateGameobjects(std::vector<std::vector<
             }
         }
 
-        GameObject* tempGameObj = new GameObject();
+        Entity* tempGameObj = new Entity();
 
         if(type=="camera")
         {
@@ -221,7 +221,7 @@ std::vector<GameObject*> SceneLoad::generateGameobjects(std::vector<std::vector<
             tempGameObj->setTag(tag);
             tempGameObj->setType(type);
             tempGameObj->setPosition(glm::vec3(xPos, yPos, zPos));
-            gameobjects.push_back(tempGameObj);
+            entities.push_back(tempGameObj);
         }
 
         if(type=="model")
@@ -247,7 +247,7 @@ std::vector<GameObject*> SceneLoad::generateGameobjects(std::vector<std::vector<
             tempGameObj->setRotation(glm::vec3( xRotation, yRotation, zRotation));
             tempGameObj->setEnableRender(enableRender);
             tempGameObj->setEnableBoundingBox(enableBoundingBox);
-            gameobjects.push_back(tempGameObj);
+            entities.push_back(tempGameObj);
         }
 
         if(type=="overlay")
@@ -272,7 +272,7 @@ std::vector<GameObject*> SceneLoad::generateGameobjects(std::vector<std::vector<
             tempGameObj->setRotation(glm::vec3( xRotation, yRotation, zRotation));
             tempGameObj->setEnableRender(enableRender);
             tempGameObj->setEnableBoundingBox(enableBoundingBox);
-            gameobjects.push_back(tempGameObj);
+            entities.push_back(tempGameObj);
         }
 
         if(type=="geometry")
@@ -294,10 +294,10 @@ std::vector<GameObject*> SceneLoad::generateGameobjects(std::vector<std::vector<
             tempGameObj->setEnableBoundingBox(enableBoundingBox);
             tempGameObj->setEnableCollider(enableCollider);
             tempGameObj->setColor( glm::vec3( colorRed, colorGreen, colorBlue) );
-            gameobjects.push_back(tempGameObj);
+            entities.push_back(tempGameObj);
         }
 
     }
 
-    return gameobjects;
+    return entities;
 };

@@ -1,11 +1,11 @@
 #include "rigid_body.h"
 
-RigidBody::RigidBody(GameObject* gameObject)
+RigidBody::RigidBody(Entity* entity)
 {
-    gameobject = gameObject;
+    entity = entity;
 };
 
 void RigidBody::applySimpleForce(glm::vec3 setVelocity)
 {
-    gameobject->setPosition( gameobject->returnPosition() + setVelocity);
+    entity->setPosition( entity->returnPosition() + setVelocity);
 };

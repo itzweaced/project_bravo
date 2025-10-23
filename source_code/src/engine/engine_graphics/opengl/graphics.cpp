@@ -94,7 +94,7 @@ void Graphics::test()
     }
 };
 
-void Graphics::render(std::vector<GameObject*> gameobjects, glm::mat4 projection, glm::mat4 view)
+void Graphics::render(std::vector<Entity*> gameobjects, glm::mat4 projection, glm::mat4 view)
 {
     glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);

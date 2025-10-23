@@ -10,11 +10,11 @@ A config file is used associate a loaded asset with an ID that can be used. To b
 - File Type or Suffix is .config
 
 # Example: Shader Asset Config File
-SHADERID=0
-DIRECTORYROOT=./scene/assets/shaders
-DIRECTORY=/boundingBoxShader
-FILENAMEVERTEX=/boundingBoxShader.vert
-FILENAMEFRAGMENT=/boundingBoxShader.frag
+- SHADERID=0
+- DIRECTORYROOT=./scene/assets/shaders
+- DIRECTORY=/boundingBoxShader
+- FILENAMEVERTEX=/boundingBoxShader.vert
+- FILENAMEFRAGMENT=/boundingBoxShader.frag
 
 
 
@@ -27,8 +27,8 @@ FILENAMEFRAGMENT=/boundingBoxShader.frag
 - File Type or Suffix is .config
 
 # Example: Model Asset Config File
-MODELID=0
-DIRECTORYROOT=./scene/assets/models
-DIRECTORY=/project_bravo_map_hangar
-FILENAME=/project_bravo_map_hangar.obj
-FILETYPE=obj
+- MODELID=0
+- DIRECTORYROOT=./scene/assets/models
+- DIRECTORY=/project_bravo_map_hangar
+- FILENAME=/project_bravo_map_hangar.obj
+- FILETYPE=obj

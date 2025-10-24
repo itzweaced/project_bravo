@@ -1,15 +1,19 @@
 # Overview
-- Desrciption: Project Bravo is Light Weight Game Engine
-- It's based on the Entity Component System (ECS)
-- The game engine is broken into two parts, the "Game" and the "Engine"
-- Engine is made up of modules
-- Game can use modules from Engine to build a game
-- The "Header File(s) .h" and "Src File(s) .cpp" are seperated into directory paths src and include
-- The Engine is based on the Entity Componentn System
-- Anything that can be spawned inside a 2D or 3D world is treated as a Entity.
+- Project Bravo is Light Weight Game Engine.
+- Based on the Entity Component System (ECS).
+- The Game Engine is broken into two parts, the "Game" and the "Engine".
+- "Engine" is made up of modules.
+- "Game" uses modules from "Engine" to build a game.
+
+# Source Code
+- The Source Code is broken into 2x parts "Header File(s) .h" and "Src File(s) .cpp" and are seperated into src and include directories.
+
+# Loading Game Assets
 - A Asset Config File contains a Asset's file paths and ID integer. The ID will be used so a Entity can be associated with it.
 - A Entity File is used for Cameras, Models, and Geometry. It contains information such as Asset ID and a object Position, Rotation, and Scale.
-- I like visualizing this project like a pyramid
+
+# Layout
+I like visualizing this project like a pyramid
     - Where App is at the Top, it the actual application for system, the actual EXE
     - Then there is Game the Middle, it the actual game area that uses engine to create to hearts content. You can afford to be a little sloppy.
     - Then there is Engine the Bottom, it's the foundation. Its made of components that can be used to build a game. This is where features are added. I see this as the level that talks to the machine/hardware.

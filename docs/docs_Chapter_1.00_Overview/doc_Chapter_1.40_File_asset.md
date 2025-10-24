@@ -18,8 +18,6 @@ A config file is used associate a loaded asset with an ID that can be used. To b
 
 
 
-
-
 # Description: Model Asset Config File 
 - A config file is used to assign Model to an ID
 - The ID will be used to associate a entity with a Model

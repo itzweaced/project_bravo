@@ -12,6 +12,7 @@
 - ROTATIONY=0
 - ROTATIONZ=0
 
+
 # Description: Model Entity File
 - A Entity that uses a Model, is associated with the Shader Asset with an ID.
 - A Entity that uses a Model, is associated with the Model Asset with an ID.

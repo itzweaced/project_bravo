@@ -12,7 +12,7 @@ The Source Code is broken into 2x parts "Header File(s) .h" and "Src File(s) .cp
 - A Entity File is used for Cameras, Models, and Geometry. It contains information such as Asset ID and a object Position, Rotation, and Scale.
 
 # Layout
-I like visualizing this project like a pyramid
+- I like visualizing this project like a pyramid
     - Where App is at the Top, it the actual application for system, the actual EXE
     - Then there is Game the Middle, it the actual game area that uses engine to create to hearts content. You can afford to be a little sloppy.
     - Then there is Engine the Bottom, it's the foundation. Its made of components that can be used to build a game. This is where features are added. I see this as the level that talks to the machine/hardware.

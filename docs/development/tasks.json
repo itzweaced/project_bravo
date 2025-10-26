@@ -10,7 +10,7 @@
             "username_completed_by":"stonedufodude",
             "date_created":"07/08/2025",
             "date_completed":"07/08/2025",
-            "tags":["c++","programming","ascii","foundation","difficulty_easy","difficulty_moderate"],
+            "tags":["c++","programming","ascii","foundation"],
             "comments":[
                 {
                     "username":"stonedufodude",
@@ -68,7 +68,7 @@
             "username_completed_by":"stonedufodude",
             "date_created":"07/20/2025",
             "date_completed":"07/20/2025",
-            "tags":["c++","graphics","programming","opengl","fileformat_obj","obj","difficulty_easy","difficulty_moderate"],
+            "tags":["c++","graphics","programming","opengl","fileformat_obj","obj"],
             "comments":[
                 {
                     "username":"stonedufodude",
@@ -95,8 +95,6 @@
             "title":"Loading Multiple Models",
             "description":"Loading multiple models into a scene and merged the Opengl pipeline into game engine",
             "completed":true,
-            "percentage_priority":75,
-            "percentage_difficulty":50,
             "username_created_by":"stonedufodude",
             "username_completed_by":"stonedufodude",
             "date_created":"07/21/2025",
@@ -288,8 +286,6 @@
             "title":"Update Textures and UV Mapping",
             "description":"Add updated textures, new models, and a cleaner development look",
             "completed":true,
-            "percentage_priority":75,
-            "percentage_difficulty":10,
             "username_created_by":"stonedufodude",
             "username_completed_by":"stonedufodude",
             "date_created":"07/28/2025",
@@ -557,8 +553,6 @@
             "title":"Game Engine Editor Generate GUI Widgets",
             "description":"Using Wxwidgets, load a scene using and generate widgets",
             "completed":true,
-            "percentage_priority":75,
-            "percentage_difficulty":50,
             "username_created_by":"stonedufodude",
             "username_completed_by":"stonedufodude",
             "date_created":"08/07/2025",
@@ -603,8 +597,6 @@
             "title":"Build a Complex Scene",
             "description":"Build a Complex Scene, with new system. By editing entity file. Develop data structure",
             "completed":true,
-            "percentage_priority":75,
-            "percentage_difficulty":50,
             "username_created_by":"stonedufodude",
             "username_completed_by":"stonedufodude",
             "date_created":"08/13/2025",

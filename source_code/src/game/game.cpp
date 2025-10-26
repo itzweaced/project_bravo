@@ -27,9 +27,6 @@ void Game::initiate()
     SceneLoad sceneLoad;
     std::vector<std::vector<std::string>> files = sceneLoad.loadEntities();
     loaded_entities = sceneLoad.generateEntities(files, loaded_shaders, loaded_models, loaded_geometry, &camera);
-
-    SceneSave sceneSave;
-    sceneSave.save(loaded_entities);
 };
 
 Game::~Game()

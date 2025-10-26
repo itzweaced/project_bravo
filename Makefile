@@ -1,23 +1,20 @@
-glfw_include = C:\Libraries\GLFW\include
-glfw_lib = C:\Libraries\GLFW\lib
+glfw_include = ./source_code/libraries/GLFW/include
+glfw_lib = ./source_code/libraries/GLFW/lib
 
-assimp_include = C:\Libraries\ASSIMP\include
-assimp_lib = C:\Libraries\ASSIMP\lib
+assimp_include = ./source_code/libraries/ASSIMP/include
+assimp_lib = ./source_code/libraries/ASSIMP/lib
 
-glad_include = C:\Libraries\GLAD\include
-glad_src =  C:\Libraries\GLAD\src\glad.c
+glad_include = ./source_code/libraries/GLAD/include
+glad_src =  ./source_code/libraries/GLAD/src/glad.c
 
-stb_include = C:\Libraries\STB\include
-stb_src = C:\Libraries\STB\src\stb.cpp
+stb_include = ./source_code/libraries/STB/include
+stb_src = ./source_code/libraries/STB/src/stb.cpp
 
-glm_include = C:\Libraries\GLM\include
+glm_include = ./source_code/libraries/GLM/include
 
-json_include = C:\Libraries\JSON\include
+json_include = ./source_code/libraries/JSON/include
 
-wxwidgets_include = C:\Libraries\wxwidgets\include
-wxwidgets_lib = C:\Libraries\wxwidgets\lib\gcc_dll
-
-EXTERNAL_DEPENDCIES = -I$(glfw_include) -I$(glad_include) -I$(stb_include) -I$(glm_include) -I$(json_include) -I$(assimp_include) #-I$(wxwidgets_include) -I$(wxwidgets_lib)/mswu
+EXTERNAL_DEPENDCIES = -I$(glfw_include) -I$(glad_include) -I$(stb_include) -I$(glm_include) -I$(json_include) -I$(assimp_include)
 
 ################################################################################################################################################################################################################################
 
@@ -79,10 +76,10 @@ TARGET = ./bin/main
 
 OBJECTS = $(CPP) $(glad_src) $(stb_src) $(LOCAL_SOURCE)
 INCLUDES = $(EXTERNAL_DEPENDCIES) $(LOCAL_DEPENDCIES)
-LIBRARIES = -L$(glfw_lib) -L$(assimp_lib)
+libRARIES = -L$(glfw_lib) -L$(assimp_lib)
 
 C_FLAGS = $(INCLUDES)
-LD_FLAGS = $(LIBRARIES) -lws2_32 -lglfw3 -lopengl32 -lglu32 -lgdi32 -lassimp -lwinmm
+LD_FLAGS = $(libRARIES) -lws2_32 -lglfw3 -lopengl32 -lglu32 -lgdi32 -lassimp -lwinmm
 
 $(TARGET): $(CPP) # Final Output
 	$(CXX) $(OBJECTS) $(C_FLAGS) $(LD_FLAGS) -o$(TARGET)

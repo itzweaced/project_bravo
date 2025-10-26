@@ -2,6 +2,8 @@
 
 Model::Model(std::string const &path, int setId)
 {
+
+
     modelPath = path;
     id = setId;
     loadModel(path);
@@ -19,8 +21,8 @@ void Model::loadModel(std::string const &path)
         std::cerr << "ERROR::ASSIMP::" << import.GetErrorString() << std::endl;
         return;
     }
+    
     directory = path.substr(0, path.find_last_of('/'));
-
     processNode(scene->mRootNode, scene);
 };
 

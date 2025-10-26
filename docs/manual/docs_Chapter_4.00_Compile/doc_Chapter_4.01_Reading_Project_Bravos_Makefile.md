@@ -1,4 +1,7 @@
-# What is a Makefile?
+# Title
+What is a Makefile?
+
+# Description
 - Acts like a Batch script
 - Acts like a linker in Codeblocks or Visual Studio: linking files and libraries to compiler
 - Can tell the compiler where to output the executable .exe

@@ -11,15 +11,6 @@ What is a make file
 
 
 # HIGHLIGHTS
-
-
-
-# BODY
-
-
-
-
-# What is a Makefile?
 - Acts like a Batch script
 - Acts like a linker in Codeblocks or Visual Studio: linking files and libraries to compiler
 - Can tell the compiler where to output the executable .exe
@@ -27,3 +18,9 @@ What is a make file
 - For Project Bravo the Makefile is located in the project's root directory. Once you enter mingw32-make into the command line, a .exe is outputted to the bin folder.
 - You have to either name it "makefile" or "Makefile"
 - If compiler catches an Error, a .exe will not be outputted and may delete previous exe located in bin.
+
+
+# BODY
+
+
+

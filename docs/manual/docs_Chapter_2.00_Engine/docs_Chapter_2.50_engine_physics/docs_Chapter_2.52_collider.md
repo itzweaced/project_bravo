@@ -1,8 +1,8 @@
-Collider(Entity* setEntity, Model* setModel, Geometry* setGeometry)
+`Collider(Entity* setEntity, Model* setModel, Geometry* setGeometry)`
 - Description: 
 
-std::vector<Vertex> returnAABB()
+`std::vector<Vertex> returnAABB()`
 - Description: 
 
-std::vector<ColliderFace> returnColliderMesh()
+`std::vector<ColliderFace> returnColliderMesh()`
 - Description: 

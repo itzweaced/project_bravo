@@ -1,5 +1,5 @@
-bool checkCollisionAABB(Collider* currentCollider, Collider* checkedCollider )
+`bool checkCollisionAABB(Collider* currentCollider, Collider* checkedCollider )`
 - Description: 
 
-bool checkCollisionAABB_inside(Collider* insideCollider, Collider* checkedCollider )
+`bool checkCollisionAABB_inside(Collider* insideCollider, Collider* checkedCollider )`
 - Description: 

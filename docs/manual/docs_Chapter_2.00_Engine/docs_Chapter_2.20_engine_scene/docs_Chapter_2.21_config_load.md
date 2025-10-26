@@ -1,6 +1,6 @@
-std::vector<Model*> ConfigLoad::loadModels()
+`std::vector<Model*> ConfigLoad::loadModels()`
 - Description: 
 
 
-std::vector<Shader*> ConfigLoad::loadShaders()
+`std::vector<Shader*> ConfigLoad::loadShaders()`
 - Description: 

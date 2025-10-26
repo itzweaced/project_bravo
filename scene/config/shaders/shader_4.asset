@@ -1,0 +1,6 @@
+SHADERID=4
+DIRECTORYROOT=./scene/assets/shaders
+DIRECTORY=/overlayShader
+FILENAMEVERTEX=/overlayShader.vert
+FILENAMEFRAGMENT=/overlayShader.frag
+FILETYPE=obj

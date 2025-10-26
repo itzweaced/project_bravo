@@ -1,0 +1,6 @@
+SHADERID=1
+DIRECTORYROOT=./scene/assets/shaders
+DIRECTORY=/lightingShader
+FILENAMEVERTEX=/lightingShader.vert
+FILENAMEFRAGMENT=/lightingShader.frag
+FILETYPE=obj

@@ -1,0 +1,6 @@
+SHADERID=2
+DIRECTORYROOT=./scene/assets/shaders
+DIRECTORY=/modelColliderShader
+FILENAMEVERTEX=/modelColliderShader.vert
+FILENAMEFRAGMENT=/modelColliderShader.frag
+FILETYPE=obj

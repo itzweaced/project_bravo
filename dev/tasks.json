@@ -1,0 +1,1095 @@
+{
+    "tasks":
+    [
+        {
+            "id":0,
+            "title":"Create Game Engine Foundation",
+            "description":"Create Game Engine Foundation using Object Oritented Programming(OOP)",
+            "completed":true,
+            "username_created_by":"stonedufodude",
+            "username_completed_by":"stonedufodude",
+            "date_created":"07/08/2025",
+            "date_completed":"07/08/2025",
+            "tags":["c++","programming","ascii","foundation","difficulty_easy","difficulty_moderate"],
+            "comments":[
+                {
+                    "username":"stonedufodude",
+                    "comment":"Used the engine to create a C++ Object Oriented 2D Game Engine in CMD/Terminal using ASSCII characters",
+                    "tags":[],
+                    "url":"",
+                    "file_path":"",
+                    "file_name":"",
+                    "date_created":"10/10/2025"
+                },
+                {
+                    "username":"stonedufodude",
+                    "comment":"I like visualizing a Game Engine step by step, known as procedural code. You have the Beginning, Middle, and End.",
+                    "tags":["explaination","rant"],
+                    "url":"",
+                    "file_path":"",
+                    "file_name":"",
+                    "date_created":"10/10/2025"
+                },
+                {
+                    "username":"stonedufodude",
+                    "comment":"The Beginning, where things are loaded and prepped for the Middle aka mainloop or gameloop.",
+                    "tags":["explaination","rant"],
+                    "url":"",
+                    "file_path":"",
+                    "file_name":"",
+                    "date_created":"10/10/2025"
+                },
+                {
+                    "username":"stonedufodude",
+                    "comment":"The Middle, is where all the fun happens. I like breaking it into 2x parts, Game Logic and Rendering. Game Logic is where Physics, Movement, User Input, Scoreboards,etc is handle. Rendering is where your telling the computer what to draw.",
+                    "tags":["explaination","rant"],
+                    "url":"",
+                    "file_path":"",
+                    "file_name":"",
+                    "date_created":"10/14/2025"
+                },
+                {
+                    "username":"stonedufodude",
+                    "comment":"The End, its the closing up shop. Making sure everything is saved properly and memory is freed up again.",
+                    "tags":["explaination","rant"],
+                    "url":"",
+                    "file_path":"",
+                    "file_name":"",
+                    "date_created":"10/14/2025"
+                }
+            ]
+        },
+        {
+            "id":1,
+            "title":"Load Model with Opengl",
+            "description":"Load a complex model as a OBJ file format just using the Opengl pipeline.",
+            "completed":true,
+            "username_created_by":"stonedufodude",
+            "username_completed_by":"stonedufodude",
+            "date_created":"07/20/2025",
+            "date_completed":"07/20/2025",
+            "tags":["c++","graphics","programming","opengl","fileformat_obj","obj","difficulty_easy","difficulty_moderate"],
+            "comments":[
+                {
+                    "username":"stonedufodude",
+                    "comment":"Loaded a complex model, just using the OpenGL pipeline. Will eventually need to merge into game engine.",
+                    "tags":["explaination"],
+                    "url":"",
+                    "file_path":"",
+                    "file_name":"",
+                    "date_created":"10/10/2025"
+                },
+                {
+                    "username":"stonedufodude",
+                    "comment":"Youtube Video Demostration",
+                    "tags":["c++","demo","youtube"],
+                    "url":"https://www.youtube.com/watch?v=UMv4HCVPg7A",
+                    "file_path":"",
+                    "file_name":"",
+                    "date_created":"10/12/2025"
+                }
+            ]
+        },
+        {
+            "id":2,
+            "title":"Loading Multiple Models",
+            "description":"Loading multiple models into a scene and merged the Opengl pipeline into game engine",
+            "completed":true,
+            "percentage_priority":75,
+            "percentage_difficulty":50,
+            "username_created_by":"stonedufodude",
+            "username_completed_by":"stonedufodude",
+            "date_created":"07/21/2025",
+            "date_completed":"07/21/2025",
+            "tags":["c++","opengl","fileformat_obj"],
+            "comments":[
+                {
+                    "username":"stonedufodude",
+                    "comment":"Using the Opengl and Game engine to load multiple models.",
+                    "tags":[],
+                    "url":"",
+                    "file_path":"",
+                    "file_name":"",
+                    "date_created":"10/10/2025"
+                },
+                {
+                    "username":"stonedufodude",
+                    "comment":"Youtube Video Demostration",
+                    "tags":["c++","demo","youtube"],
+                    "url":"https://www.youtube.com/watch?v=5_b99hlJb3Y",
+                    "file_path":"",
+                    "file_name":"",
+                    "date_created":"10/12/2025"
+                }
+            ]
+        },
+        {
+            "id":3,
+            "title":"Implement a entity system",
+            "description":"Implemented a entity system where everything in the engine is essentially a entity. In theory",
+            "completed":true,
+            "username_created_by":"stonedufodude",
+            "username_completed_by":"stonedufodude",
+            "date_created":"07/24/2025",
+            "date_completed":"07/24/2025",
+            "tags":["c++","opengl","fileformat_obj","c++_classes","pointers"],
+            "comments":[
+                {
+                    "username":"stonedufodude",
+                    "comment":"Every Model in a scene is essentially a entity, where its position, rotation, and scale can be easily changed. Even Swapped out with another model.",
+                    "tags":[],
+                    "url":"",
+                    "file_path":"",
+                    "file_name":"",
+                    "date_created":"10/10/2025"
+                },
+                {
+                    "username":"stonedufodude",
+                    "comment":"Youtube Video Demostration",
+                    "tags":["c++","demo","youtube"],
+                    "url":"https://www.youtube.com/watch?v=9UfypGyvdHE",
+                    "file_path":"",
+                    "file_name":"",
+                    "date_created":"10/12/2025"
+                }
+            ]
+        },
+        {
+            "id":4,
+            "title":"Build a Complex Scene",
+            "description":"Create a complex scene using the entity system",
+            "completed":true,
+            "username_created_by":"stonedufodude",
+            "username_completed_by":"stonedufodude",
+            "date_created":"07/25/2025",
+            "date_completed":"07/25/2025",
+            "tags":["c++","opengl","fileformat_obj","c++_classes","pointers"],
+            "comments":[
+                {
+                    "username":"stonedufodude",
+                    "comment":"Abled to build a complex scene, but need to be able load and build a scene from loaded files so a scene is not built with code but can be loaded from files",
+                    "tags":[],
+                    "url":"",
+                    "file_path":"",
+                    "file_name":"",
+                    "date_created":"10/10/2025"
+                },
+                {
+                    "username":"stonedufodude",
+                    "comment":"Youtube Video Demostration",
+                    "tags":["c++","demo","youtube"],
+                    "url":"https://www.youtube.com/watch?v=LWsdKNNhRJ0",
+                    "file_path":"",
+                    "file_name":"",
+                    "date_created":"10/12/2025"
+                },
+                {
+                    "username":"stonedufodude",
+                    "comment":"Youtube Video Demostration",
+                    "tags":["c++","demo","youtube"],
+                    "url":"https://www.youtube.com/watch?v=BHvPTBBM_J8",
+                    "file_path":"",
+                    "file_name":"",
+                    "date_created":"10/12/2025"
+                }
+            ]
+        },
+        {
+            "id":5,
+            "title":"Update and Organize entity",
+            "description":"Entitys is still chaotic, need to define a clear structure, what are entitys?",
+            "completed":true,
+            "username_created_by":"stonedufodude",
+            "username_completed_by":"stonedufodude",
+            "date_created":"07/26/2025",
+            "date_completed":"07/26/2025",
+            "tags":[],
+            "comments":[
+                {
+                    "username":"stonedufodude",
+                    "comment":"At this point there was not clear structure to entitys. I wasnt sure what should entitys job should be.",
+                    "tags":["c++","demo","youtube"],
+                    "url":"",
+                    "file_path":"",
+                    "file_name":"",
+                    "date_created":"10/19/2025"
+                },
+                {
+                    "username":"stonedufodude",
+                    "comment":"Should have variable that track velocity, direction, etc.",
+                    "tags":["c++","demo","youtube"],
+                    "url":"",
+                    "file_path":"",
+                    "file_name":"",
+                    "date_created":"10/19/2025"
+                },
+                {
+                    "username":"stonedufodude",
+                    "comment":"I end up having the classes storing those such as Rigid Body.",
+                    "tags":["c++","demo","youtube"],
+                    "url":"",
+                    "file_path":"",
+                    "file_name":"",
+                    "date_created":"10/19/2025"
+                },
+                {
+                    "username":"stonedufodude",
+                    "comment":"Reasoning is, not every entity is going to need its speed tracked, in theory this only allocates the needed memory for such things",
+                    "tags":["c++","demo","youtube"],
+                    "url":"",
+                    "file_path":"",
+                    "file_name":"",
+                    "date_created":"10/19/2025"
+                },
+                {
+                    "username":"stonedufodude",
+                    "comment":"Modularity is really nice, but I have to have a flow chart to know how the fuck everything is connected.",
+                    "tags":["c++","demo","youtube"],
+                    "url":"",
+                    "file_path":"",
+                    "file_name":"",
+                    "date_created":"10/19/2025"
+                }
+            ]
+        },
+        {
+            "id":6,
+            "title":"Create Bounding Box",
+            "description":"Create a bounding box around loaded models, using a Model's <X,Y,Z> min and max vertices values.",
+            "completed":true,
+            "username_created_by":"stonedufodude",
+            "username_completed_by":"stonedufodude",
+            "date_created":"07/27/2025",
+            "date_completed":"07/27/2025",
+            "tags":[],
+            "comments":[
+                {
+                    "username":"stonedufodude",
+                    "comment":"Youtube Video Demostration",
+                    "tags":["c++","demo","youtube"],
+                    "url":"https://www.youtube.com/watch?v=H2Qi4ZEVAN4",
+                    "file_path":"",
+                    "file_name":"",
+                    "date_created":"10/12/2025"
+                },
+                {
+                    "username":"stonedufodude",
+                    "comment":"It works but I am using opengls draw lines. Short answer I dont like it, its a lazy implementation on my part",
+                    "tags":["c++","demo","youtube"],
+                    "url":"",
+                    "file_path":"",
+                    "file_name":"",
+                    "date_created":"10/19/2025"
+                }
+            ]
+        },
+        {
+            "id":7,
+            "title":"Update Textures and UV Mapping",
+            "description":"Add updated textures, new models, and a cleaner development look",
+            "completed":true,
+            "percentage_priority":75,
+            "percentage_difficulty":10,
+            "username_created_by":"stonedufodude",
+            "username_completed_by":"stonedufodude",
+            "date_created":"07/28/2025",
+            "date_completed":"07/28/2025",
+            "tags":[],
+            "comments":[
+                {
+                    "username":"stonedufodude",
+                    "comment":"Youtube Video Demostration",
+                    "tags":["c++","demo","youtube"],
+                    "url":"https://www.youtube.com/watch?v=rwMbFdfwfxc",
+                    "file_path":"",
+                    "file_name":"",
+                    "date_created":"10/12/2025"
+                },
+                {
+                    "username":"stonedufodude",
+                    "comment":"The textures looked like garbage literally, add Grid Texture to help with map design layout down the road.",
+                    "tags":["c++","demo","youtube"],
+                    "url":"",
+                    "file_path":"",
+                    "file_name":"",
+                    "date_created":"10/19/2025"
+                }
+            ]
+        },
+        {
+            "id":8,
+            "title":"Basic FPS Camera",
+            "description":"Experiment with First Person Camera",
+            "completed":true,
+            "username_created_by":"stonedufodude",
+            "username_completed_by":"stonedufodude",
+            "date_created":"07/29/2025",
+            "date_completed":"07/29/2025",
+            "tags":[],
+            "comments":[
+                {
+                    "username":"stonedufodude",
+                    "comment":"Youtube Video Demostration",
+                    "tags":["c++","demo","youtube"],
+                    "url":"https://www.youtube.com/watch?v=qepRTEJSXFk",
+                    "file_path":"",
+                    "file_name":"",
+                    "date_created":"10/12/2025"
+                },
+                {
+                    "username":"stonedufodude",
+                    "comment":"Figure how to keep the on the same elevation regardless of camera's looking direction.",
+                    "tags":["c++","demo","youtube"],
+                    "url":"",
+                    "file_path":"",
+                    "file_name":"",
+                    "date_created":"10/19/2025"
+                },
+                {
+                    "username":"stonedufodude",
+                    "comment":"Still had a problem with clipping when getting near objects, and had to adjust the near plane clipping.",
+                    "tags":["c++","demo","youtube"],
+                    "url":"",
+                    "file_path":"",
+                    "file_name":"",
+                    "date_created":"10/19/2025"
+                }
+            ]
+        },
+        {
+            "id":9,
+            "title":"Basic Rigid Body and Collision Test",
+            "description":"Added 2 ground collision grid planes, to create a 1st floor and a 2nd floor around a model building structure.",
+            "completed":true,
+            "username_created_by":"stonedufodude",
+            "username_completed_by":"stonedufodude",
+            "date_created":"07/30/2025",
+            "date_completed":"07/30/2025",
+            "tags":[],
+            "comments":[
+                {
+                    "username":"stonedufodude",
+                    "comment":"Example of shitty code, but it works. For my non programming people The ifs you see mean <if this happens, do the stuff in the middle> In this case, if the camera falls inside the plane <like piece of paper>, apply a down force to the model, and also stay above the floor. Its shitty, because it has ifs within ifs and bad structure. Its a start",
+                    "tags":[],
+                    "url":"https://www.youtube.com/watch?v=TKx1U7mcCyc",
+                    "file_path":"",
+                    "file_name":"",
+                    "date_created":"10/10/2025"
+                },                
+                {
+                    "username":"stonedufodude",
+                    "comment":"Youtube Video Demostration",
+                    "tags":["c++","demo","youtube"],
+                    "url":"https://www.youtube.com/watch?v=HnKXYvhYQvI",
+                    "file_path":"",
+                    "file_name":"",
+                    "date_created":"10/12/2025"
+                },                
+                {
+                    "username":"stonedufodude",
+                    "comment":"Youtube Video Demostration",
+                    "tags":["c++","demo","youtube"],
+                    "url":"https://www.youtube.com/watch?v=30w8H-aArhQ",
+                    "file_path":"",
+                    "file_name":"",
+                    "date_created":"10/12/2025"
+                },                
+                {
+                    "username":"stonedufodude",
+                    "comment":"Youtube Video Demostration",
+                    "tags":["c++","demo","youtube"],
+                    "url":"https://www.youtube.com/watch?v=8uqo46cjgYI",
+                    "file_path":"",
+                    "file_name":"",
+                    "date_created":"10/12/2025"
+                }
+            ]
+        },
+        {
+            "id":10,
+            "title":"Make Entitys Dyanmic",
+            "description":"Make entitys be able to generated from data listed inside a vector.",
+            "completed":true,
+            "username_created_by":"stonedufodude",
+            "username_completed_by":"stonedufodude",
+            "date_created":"08/01/2025",
+            "date_completed":"08/02/2025",
+            "tags":[],
+            "comments":[
+                {
+                    "username":"stonedufodude",
+                    "comment":"Entity are delcared and valued before the main loop.",
+                    "tags":["c++","demo","youtube"],
+                    "url":"",
+                    "file_path":"",
+                    "file_name":"",
+                    "date_created":"10/19/2025"
+                },
+                {
+                    "username":"stonedufodude",
+                    "comment":"Needed to add a Vector list that is filled with information describing a model's <Position,Rotation,Scale>.",
+                    "tags":["c++","demo","youtube"],
+                    "url":"",
+                    "file_path":"",
+                    "file_name":"",
+                    "date_created":"10/19/2025"
+                },
+                {
+                    "username":"stonedufodude",
+                    "comment":"This data is read, generating a entity class. Still the list is inputed manually and hard coded. But its in the direction of automating the engine",
+                    "tags":["c++","demo","youtube"],
+                    "url":"",
+                    "file_path":"",
+                    "file_name":"",
+                    "date_created":"10/19/2025"
+                },
+                {
+                    "username":"stonedufodude",
+                    "comment":"Still data is hard coded. Eventually it will be loaded from saved files.",
+                    "tags":["c++","demo","youtube"],
+                    "url":"",
+                    "file_path":"",
+                    "file_name":"",
+                    "date_created":"10/19/2025"
+                }
+            ]
+        },
+        {
+            "id":11,
+            "title":"Game Engine Editor",
+            "description":"Realizing editing entitys through code, is not time practical. Will need to develope a GUI tool editor to edit entity data. Create a GUI that create a Opengl Window.",
+            "completed":true,
+            "username_created_by":"stonedufodude",
+            "username_completed_by":"stonedufodude",
+            "date_created":"08/03/2025",
+            "date_completed":"08/04/2025",
+            "tags":[],
+            "comments":[
+                {
+                    "username":"stonedufodude",
+                    "comment":"In theory a Vector list storing all entitys can be loading into a GUI. Where you can edit the Entity properties",
+                    "tags":["c++","demo","youtube"],
+                    "url":"",
+                    "file_path":"",
+                    "file_name":"",
+                    "date_created":"10/19/2025"
+                },
+                {
+                    "username":"stonedufodude",
+                    "comment":"Using wxwidgets, its Free 99! Honestly it was litterally the first option that popped up during a search.",
+                    "tags":[],
+                    "url":"",
+                    "file_path":"",
+                    "file_name":"",
+                    "date_created":"10/10/2025"
+                },
+                {
+                    "username":"stonedufodude",
+                    "comment":"Will need to eventually implement ImGUI, for In Game GUI Tool. Very Useful",
+                    "tags":[],
+                    "url":"",
+                    "file_path":"",
+                    "file_name":"",
+                    "date_created":"10/19/2025"
+                },
+                {
+                    "username":"stonedufodude",
+                    "comment":"Youtube Video Demostration",
+                    "tags":["c++","demo","youtube"],
+                    "url":"",
+                    "file_path":"",
+                    "file_name":"",
+                    "date_created":"10/12/2025"
+                }
+            ]
+        },
+        {
+            "id":12,
+            "title":"Game Engine Editor and Load a Scene",
+            "description":"Using Wxwidgets, load a scene using the entitys system",
+            "completed":true,
+            "username_created_by":"stonedufodude",
+            "username_completed_by":"stonedufodude",
+            "date_created":"08/05/2025",
+            "date_completed":"08/06/2025",
+            "tags":[],
+            "comments":[
+                {
+                    "username":"stonedufodude",
+                    "comment":"Works if its hard coded directly before the Game Loop.",
+                    "tags":[],
+                    "url":"",
+                    "file_path":"",
+                    "file_name":"",
+                    "date_created":"10/19/2025"
+                },
+                {
+                    "username":"stonedufodude",
+                    "comment":"The Dynamic method works normally, when used with the GLFW Opengl Window.",
+                    "tags":[],
+                    "url":"",
+                    "file_path":"",
+                    "file_name":"",
+                    "date_created":"10/19/2025"
+                },
+                {
+                    "username":"stonedufodude",
+                    "comment":"Once I make entitys dynamic the scene is not loaded. Best guess is that data is not passed down or being corrupted.",
+                    "tags":[],
+                    "url":"",
+                    "file_path":"",
+                    "file_name":"",
+                    "date_created":"10/10/2025"
+                },
+                {
+                    "username":"stonedufodude",
+                    "comment":"I don't think I am using the pointer correctly.",
+                    "tags":[],
+                    "url":"",
+                    "file_path":"",
+                    "file_name":"",
+                    "date_created":"10/10/2025"
+                }
+            ]
+        },
+        {
+            "id":13,
+            "title":"Game Engine Editor Generate GUI Widgets",
+            "description":"Using Wxwidgets, load a scene using and generate widgets",
+            "completed":true,
+            "percentage_priority":75,
+            "percentage_difficulty":50,
+            "username_created_by":"stonedufodude",
+            "username_completed_by":"stonedufodude",
+            "date_created":"08/07/2025",
+            "date_completed":"08/07/2025",
+            "tags":[],
+            "comments":[
+                {
+                    "username":"stonedufodude",
+                    "comment":"Once I make entitys dynamic, the scene is not loaded. Best guess is that data is not getting properly passed down. Works normal using the GLFW Opengl Context Window. Will need to return to it.",
+                    "tags":[],
+                    "url":"",
+                    "file_path":"",
+                    "file_name":"",
+                    "date_created":"10/10/2025"
+                }
+            ]
+        },
+        {
+            "id":14,
+            "title":"Load Files to build a Scene",
+            "description":"Load files to build a scene, create file with entity as its file type",
+            "completed":true,
+            "username_created_by":"stonedufodude",
+            "username_completed_by":"stonedufodude",
+            "date_created":"08/08/2025",
+            "date_completed":"08/13/2025",
+            "tags":[],
+            "comments":[
+                {
+                    "username":"stonedufodude",
+                    "comment":"Entitys can be saved and loaded from text files inside designated directory.- Files can be added to add more objects- Entity's properties like <Position, Scale, Rotation> can be edited inside the text file.When the refresh key is pressed, the scene is cleared and entitys are reloaded and generated.",
+                    "tags":[],
+                    "url":"",
+                    "file_path":"",
+                    "file_name":"",
+                    "date_created":"10/10/2025"
+                }
+            ]
+        },
+        {
+            "id":15,
+            "title":"Build a Complex Scene",
+            "description":"Build a Complex Scene, with new system. By editing entity file. Develop data structure",
+            "completed":true,
+            "percentage_priority":75,
+            "percentage_difficulty":50,
+            "username_created_by":"stonedufodude",
+            "username_completed_by":"stonedufodude",
+            "date_created":"08/13/2025",
+            "date_completed":"08/15/2025",
+            "tags":[],
+            "comments":[]
+        },
+        {
+            "id":16,
+            "title":"2D Overlay Texture Image",
+            "description":"Overlay a PNG image over 3D Render scene.",
+            "completed":true,
+            "username_created_by":"stonedufodude",
+            "username_completed_by":"stonedufodude",
+            "date_created":"08/16/2025",
+            "date_completed":"08/17/2025",
+            "tags":[],
+            "comments":[]
+        },
+        {
+            "id":17,
+            "title":"First Network",
+            "description":"This is a network connection test between Server and Client. The client is controlling the camera remotely by sending instructions to the server to update position of client. The Opengl Game Engine checks the server every game loop iteration and updates the camera's position. A server thread is created at the start of the application with its own main loop to listen for incoming connections. When a client connects another thread is created for the client's connections. The Server waits for the client's quit command to end connection.",
+            "completed":true,
+            "username_created_by":"stonedufodude",
+            "username_completed_by":"stonedufodude",
+            "date_created":"08/17/2025",
+            "date_completed":"08/17/2025",
+            "tags":[],
+            "comments":[]
+        },
+        {
+            "id":18,
+            "title":"Create a Rigid Body System",
+            "description":"Create a Rigid Body class, to create movement for entitys",
+            "completed":true,
+            "username_created_by":"stonedufodude",
+            "username_completed_by":"stonedufodude",
+            "date_created":"08/18/2025",
+            "date_completed":"08/19/2025",
+            "tags":[],
+            "comments":[]
+        },
+        {
+            "id":19,
+            "title":"Generate Geometry Shapes",
+            "description":"This will be used to test for (AABB)Axis Aligned Bounding Box Collisions. Each object in a scene is a entity that can have a collider generated.A collision class will check for a collision between the characters bounding box and Geometry cubes.",
+            "completed":true,
+            "username_created_by":"stonedufodude",
+            "username_completed_by":"stonedufodude",
+            "date_created":"08/20/2025",
+            "date_completed":"08/21/2025",
+            "tags":[],
+            "comments":[]
+        },
+        {
+            "id":20,
+            "title":"(AABB) Axis Aligned Bounding Box Internal Collision",
+            "description":"Checking for bounding box is inside of geometry or bounding box.",
+            "completed":true,
+            "username_created_by":"stonedufodude",
+            "username_completed_by":"stonedufodude",
+            "date_created":"08/21/2025",
+            "date_completed":"08/22/2025",
+            "tags":[],
+            "comments":[]
+        },
+        {
+            "id":21,
+            "title":"(AABB) Axis Aligned Bounding Box External Collision",
+            "description":"Check if bounding box touches geometry or bounding box",
+            "completed":true,
+            "username_created_by":"stonedufodude",
+            "username_completed_by":"stonedufodude",
+            "date_created":"08/22/2025",
+            "date_completed":"08/22/2025",
+            "tags":[],
+            "comments":[]
+        },
+        {
+            "id":22,
+            "title":"(AABB) Axis Aligned Bounding Box Collision Portal",
+            "description":"Testing a column to allow colliders to pass through a AABB collider.",
+            "completed":true,
+            "username_created_by":"stonedufodude",
+            "username_completed_by":"stonedufodude",
+            "date_created":"08/26/2025",
+            "date_completed":"08/27/2025",
+            "tags":[],
+            "comments":[]
+        },
+        {
+            "id":23,
+            "title":"Dynamic Scene Loading",
+            "description":"Able to load scenes dynamically with there own assets.",
+            "completed":true,
+            "username_created_by":"stonedufodude",
+            "username_completed_by":"stonedufodude",
+            "date_created":"08/27/2025",
+            "date_completed":"08/28/2025",
+            "tags":[],
+            "comments":[]
+        },
+        {
+            "id":24,
+            "title":"Raycast Collision Detection",
+            "description":"Added raycast to create targeting detections",
+            "completed":true,
+            "username_created_by":"stonedufodude",
+            "username_completed_by":"stonedufodude",
+            "date_created":"08/29/2025",
+            "date_lastModified":"08/31/2025",
+            "date_completed":"08/31/2025",
+            "tags":[],
+            "comments":[
+                {
+                    "username":"stonedufodude",
+                    "comment":"Issues Encountered: - AABB Indices were not following the right hand rule. Causing backwards normals. - Could not figure out how to implement raycast math as code.",
+                    "tags":[],
+                    "url":"",
+                    "file_path":"",
+                    "file_name":"",
+                    "date_created":"10/10/2025"
+                },
+                {
+                    "username":"stonedufodude",
+                    "comment":"Not proud but Chatgpt showed me how to implement the motherfucker. Skynet save me!!! lol",
+                    "tags":[],
+                    "url":"",
+                    "file_path":"",
+                    "file_name":"",
+                    "date_created":"10/10/2025"
+                },
+                {
+                    "username":"stonedufodude",
+                    "comment":"Documentation is the lesson here with proper idiot friendly explaination for people such as myself Xp",
+                    "tags":[],
+                    "url":"",
+                    "file_path":"",
+                    "file_name":"",
+                    "date_created":"10/10/2025"
+                }
+            ]
+        },
+        {
+            "id":25,
+            "title":"3D Model Overlay",
+            "description":"Overlaying a gun over rendered scene. Cleared depth buffer to avoid wall clipping and then render gun over scene.",
+            "completed":true,
+            "username_created_by":"stonedufodude",
+            "username_completed_by":"stonedufodude",
+            "date_created":"08/31/2025",
+            "date_completed":"08/31/2025",
+            "tags":[],
+            "comments":[]
+        },
+        {
+            "id":26,
+            "title":"Demo Level with basic Collision and Physics",
+            "description":"Adding colliders to level, for AABB and Raycast collisions.",
+            "completed":true,
+            "username_created_by":"stonedufodude",
+            "username_completed_by":"stonedufodude",
+            "date_created":"09/05/2025",
+            "date_completed":"09/09/2025",
+            "tags":[],
+            "comments":[]
+        },
+        {
+            "id":27,
+            "title":"Create UI Croshair for Overlay",
+            "description":"UI Design - Creating Development Crosshair",
+            "completed":true,
+            "username_created_by":"stonedufodude",
+            "username_completed_by":"stonedufodude",
+            "date_created":"09/09/2025",
+            "date_completed":"09/09/2025",
+            "tags":[],
+            "comments":[]
+        },
+        {
+            "id":28,
+            "title":"Windows Audio",
+            "description":"Add audio with Windows API",
+            "completed":true,
+            "username_created_by":"stonedufodude",
+            "username_completed_by":"stonedufodude",
+            "date_created":"09/09/2025",
+            "date_completed":"09/10/2025",
+            "tags":[],
+            "comments":[]
+        },
+        {
+            "id":29,
+            "title":"Rename engine_project to engine_scene",
+            "description":"Rename engine_project to engine_scene and everything related. Its really loading a scene than a project.",
+            "completed":true,
+            "username_created_by":"stonedufodude",
+            "username_completed_by":"",
+            "date_created":"10/11/2025",
+            "date_completed":"10/14/2025",
+            "tags":["programming","c++","rename"],
+            "comments":[]
+        },
+        {
+            "id":30,
+            "title":"Create Dynamic Loading for Shaders in Game.cpp",
+            "description":"Needs to be more systematic. Make shaders load from files instead inputting it manually. Will need to change how shader stored within assets.",
+            "completed":true,
+            "username_created_by":"stonedufodude",
+            "username_completed_by":"stonedufodude",
+            "date_created":"10/11/2025",
+            "date_completed":"10/18/2025",
+            "tags":["programming","c++"],
+            "comments":[
+                {
+                    "username":"stonedufodude",
+                    "comment":"Youtube Dev Session",
+                    "tags":["youtube","dev_session"],
+                    "url":"https://www.youtube.com/watch?v=jDPTBMNCR2E",
+                    "file_path":"",
+                    "file_name":"",
+                    "date_created":"10/14/2025"
+                },
+                {
+                    "username":"stonedufodude",
+                    "comment":"Will need to make a asset management system",
+                    "tags":[],
+                    "url":"",
+                    "file_path":"",
+                    "file_name":"",
+                    "date_created":"10/15/2025"
+                },
+                {
+                    "username":"stonedufodude",
+                    "comment":"Entitys files currently need and track an Asset’s file path. Rather they should focus on what asset is needed, referenced with numerical ID.",
+                    "tags":[],
+                    "url":"",
+                    "file_path":"",
+                    "file_name":"",
+                    "date_created":"10/15/2025"
+                },
+                {
+                    "username":"stonedufodude",
+                    "comment":"Essentially assets are loaded and assigned ID before Entitys is loaded.",
+                    "tags":[],
+                    "url":"",
+                    "file_path":"",
+                    "file_name":"",
+                    "date_created":"10/15/2025"
+                },
+                {
+                    "username":"stonedufodude",
+                    "comment":"Would like to use a JSON file, would avoid a cluster fuck. But for right now, I will keep it simple by not implementing a JSON reading writing feature yet.",
+                    "tags":[],
+                    "url":"",
+                    "file_path":"",
+                    "file_name":"",
+                    "date_created":"10/15/2025"
+                },
+                {
+                    "username":"stonedufodude",
+                    "comment":"Spend more time thinking about structure than coding, reasoning  its a pain the ass to make changes to a system.",
+                    "tags":[],
+                    "url":"",
+                    "file_path":"",
+                    "file_name":"",
+                    "date_created":"10/15/2025"
+                },
+                {
+                    "username":"stonedufodude",
+                    "comment":"Separated the loading the process of loading assets and loading entitys from files",
+                    "tags":[],
+                    "url":"",
+                    "file_path":"",
+                    "file_name":"",
+                    "date_created":"10/18/2025"
+                },
+                {
+                    "username":"stonedufodude",
+                    "comment":"A text file acts like a configuration file for either models, shaders, audio, and images. Listing ID, File Path, and FIle Name.",
+                    "tags":[],
+                    "url":"",
+                    "file_path":"",
+                    "file_name":"",
+                    "date_created":"10/18/2025"
+                },
+                {
+                    "username":"stonedufodude",
+                    "comment":"Entity are associated to Game Assets via ID",
+                    "tags":[],
+                    "url":"",
+                    "file_path":"",
+                    "file_name":"",
+                    "date_created":"10/18/2025"
+                },
+                {
+                    "username":"stonedufodude",
+                    "comment":"Entity File no longer worries about asset pathing, and just focus on it own thing",
+                    "tags":[],
+                    "url":"",
+                    "file_path":"",
+                    "file_name":"",
+                    "date_created":"10/18/2025"
+                }
+            ]
+        },
+        {
+            "id":31,
+            "title":"Implement a proper user input system",
+            "description":"Implement a proper user input system so its more modular in think currently it sits in the game",
+            "completed":true,
+            "username_created_by":"stonedufodude",
+            "username_completed_by":"",
+            "date_created":"10/11/2025",
+            "date_completed":"10/22/2025",
+            "tags":["programming","c++","userinput"],
+            "comments":[]
+        },
+        {
+            "id":32,
+            "title":"Move texture overlay loading away from graphics",
+            "description":"Move texture overlay loading away from graphics and into game like everything else. I think this is causing a memory leak by generating a shader every game loop.",
+
+            "completed":false,
+            "username_created_by":"stonedufodude",
+            "username_completed_by":"",
+            "date_created":"10/11/2025",
+            "date_completed":"",
+            "tags":["programming","c++","shader"],
+            "comments":[
+                                {
+                    "username":"stonedufodude",
+                    "comment":"Making loading images/textures just like shaders and models. Using a config to load it into the engine.",
+                    "tags":[],
+                    "url":"",
+                    "file_path":"",
+                    "file_name":"",
+                    "date_created":"10/19/2025"
+                }
+            ]
+        },
+        {
+            "id":33,
+            "title":"Move model overlay loading away from graphics",
+            "description":"Move model overlay loading away from graphics and into game like everything else. I think this is causing a memory leak by generating a shader every game loop.",
+            "completed":false,
+            "username_created_by":"stonedufodude",
+            "username_completed_by":"",
+            "date_created":"10/11/2025",
+            "date_completed":"",
+            "tags":["programming","c++"],
+            "comments":[
+                {
+                    "username":"stonedufodude",
+                    "comment":"The Shaders being dynamic should make this easier, now that they loaded. Just need to think of system to handle the overlay system",
+                    "tags":[],
+                    "url":"",
+                    "file_path":"",
+                    "file_name":"",
+                    "date_created":"10/19/2025"
+                }
+            ]
+        },
+        {
+            "id":34,
+            "title":"Make a Audio class",
+            "description":"Make a Audio class",
+
+            "completed":false,
+            "username_created_by":"stonedufodude",
+            "username_completed_by":"",
+            "date_created":"10/11/2025",
+            "date_completed":"",
+            "tags":["programming","c++","error_handeling","file_loading"],
+            "comments":[]
+        },
+        {
+            "id":35,
+            "title":"Audio Loop Background Music",
+            "description":"Audio Loop Background Music",
+            "completed":false,
+            "username_created_by":"stonedufodude",
+            "username_completed_by":"",
+            "date_created":"10/09/2025",
+            "date_completed":"",
+            "tags":["programming","audio","c++"],
+            "comments":[]
+        },
+        {
+            "id":36,
+            "title":"Audio Play 2x Sounds at Once",
+            "description":"Audio Play 2x Sounds at Once",
+            "completed":false,
+            "username_created_by":"stonedufodude",
+            "username_completed_by":"",
+            "date_created":"10/09/2025",
+            "date_completed":"",
+            "tags":["programming","audio","c++"],
+            "comments":[]
+        },
+        {
+            "id":37,
+            "title":"Setup a proper player system",
+            "description":"Setup a proper camera module system, so camera can be change and the engine account for it. Currently its kinda stuck to a single entity. Have a player based camera setup.",
+            "completed":false,
+            "username_created_by":"stonedufodude",
+            "username_completed_by":"",
+            "date_created":"10/11/2025",
+            "date_completed":"",
+            "tags":["programming","c++","camera"],
+            "comments":[]
+
+        },
+        {
+            "id":38,
+            "title":"Implement a Network Client",
+            "description":"Implement a Network Client, so it can connect to server for multiplayer.",
+            "completed":false,
+            "username_created_by":"stonedufodude",
+            "username_completed_by":"",
+            "date_created":"10/11/2025",
+            "date_completed":"",
+            "tags":["programming","c++","error_handeling","file_loading"],
+            "comments":[]
+        },
+        {
+            "id":39,
+            "title":"Improve Network Server",
+            "description":"Needs major improvement",
+            "completed":false,
+            "username_created_by":"stonedufodude",
+            "username_completed_by":"",
+            "date_created":"10/11/2025",
+            "date_completed":"",
+            "tags":["programming","c++","error_handeling","file_loading"],
+            "comments":[]
+        },
+        {
+            "id":40,
+            "title":"Multiplayer",
+            "description":"Add multiplayer, seting up a client and server system to support 4 players",
+            "completed":false,
+            "username_created_by":"stonedufodude",
+            "username_completed_by":"",
+            "date_created":"10/09/2025",
+            "date_completed":"",
+            "tags":["programming","network","c++"],
+            "comments":[]
+        },
+        {
+            "id":41,
+            "title":"Add Animation for Models",
+            "description":"Add Animation for Models",
+            "completed":false,
+            "username_created_by":"stonedufodude",
+            "username_completed_by":"",
+            "date_created":"10/11/2025",
+            "date_completed":"",
+            "tags":["programming","c++","animation"],
+            "comments":[]
+        },
+        {
+            "id":42,
+            "title":"Audio Reverb Effect",
+            "description":"Create audio reverb system",
+            "completed":false,
+            "username_created_by":"stonedufodude",
+            "username_completed_by":"",
+            "date_created":"10/11/2025",
+            "date_completed":"",
+            "tags":["programming","c++","audio"],
+            "comments":[]
+        },
+        {
+            "id":43,
+            "title":"Audio Delay Effect",
+            "description":"Create delay reverb system",
+            "completed":false,
+            "username_created_by":"stonedufodude",
+            "username_completed_by":"",
+            "date_created":"10/11/2025",
+            "date_completed":"",
+            "tags":["programming","c++","audio"],
+            "comments":[]
+        }
+    ]
+}

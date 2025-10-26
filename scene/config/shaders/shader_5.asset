@@ -1,0 +1,6 @@
+SHADERID=5
+DIRECTORYROOT=./scene/assets/shaders
+DIRECTORY=/whiteEmissionShader
+FILENAMEVERTEX=/whiteEmissionShader.vert
+FILENAMEFRAGMENT=/whiteEmissionShader.frag
+FILETYPE=obj

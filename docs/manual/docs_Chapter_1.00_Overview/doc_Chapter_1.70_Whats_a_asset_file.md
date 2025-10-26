@@ -20,11 +20,13 @@ A config file is used associate a loaded asset with an ID that can be used. To b
 # BODY
 
 - Example: Shader Asset Config File
+
     - SHADERID=0
     - DIRECTORYROOT=./scene/assets/shaders
     - DIRECTORY=/boundingBoxShader
     - FILENAMEVERTEX=/boundingBoxShader.vert
     - FILENAMEFRAGMENT=/boundingBoxShader.frag
+
 
 - Example: Model Asset Config File
     - MODELID=0

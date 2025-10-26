@@ -3,12 +3,11 @@
 
 
 # TITTLE
-What is a make file
+What is a Makefile?
 
 
 # DESCRIPTION
- The Source Code is broken into 2x parts "Header File(s) .h" and "Src File(s) .cpp" and are seperated into src and include directories. Its compiled with a makefile ans shipped with the neccessary libraries. To be a self containted project including everything.
-
+A Makefile is located in the base directory. Its a file that tells the compiler how to link the file inside the project and 3rd party libraries used.
 
 # HIGHLIGHTS
 - Acts like a Batch script

@@ -7,13 +7,12 @@ What is a Entity File?
 
 
 # DESCRIPTION
- The Source Code is broken into 2x parts "Header File(s) .h" and "Src File(s) .cpp" and are seperated into src and include directories. Its compiled with a makefile ans shipped with the neccessary libraries. To be a self containted project including everything.
 
 
 # HIGHLIGHTS
 - Camera Entity File: The Entity file stores information on the objects X,Y,Z Position Coordinates, Rotation, and Scale. This can be used for inital start.
-- Model Entity File: A Entity that uses a Model, is associated with the Shader Asset with an ID.
-- Model Entity File: A Entity that uses a Model, is associated with the Model Asset with an ID.
+- Model Entity File: A Entity that uses a Model, is associated with the Shader Asset using an ID, called `SHADERID`.
+- Model Entity File: A Entity that uses a Model, is associated with the Model Asset using an ID, called `MODELID`.
 - Model Entity File: The Entity file stores information on the objects X,Y,Z Position Coordinates, Rotation, and Scale
 - Geometry Entity File: A Entity that uses a Model, is associated with the Shader Asset with an ID.
 - Geometry Entity File: The Entity file stores information on the objects X,Y,Z Position Coordinates, Rotation, and Scale

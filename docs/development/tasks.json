@@ -407,7 +407,7 @@
         },
         {
             "id":10,
-            "title":"Make Entitys Dyanmic",
+            "title":"Make Entities Dyanmic",
             "description":"Make entitys be able to generated from data listed inside a vector.",
             "completed":true,
             "username_created_by":"stonedufodude",

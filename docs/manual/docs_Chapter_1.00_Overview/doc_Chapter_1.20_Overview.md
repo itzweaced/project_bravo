@@ -1,5 +1,16 @@
-# Project Code Name
-Project Bravo
+# CHAPTER
+1.20
 
-# Project Description
+# TITTLE
+Project Bravo Overview
+
+# DESCRIPTION
 Project Bravo is a liight weight 2D and 3D Game Engine based on the Entity Component System. The Game Engine is broken into two parts, the "Game" and the "Engine". "Engine" is made up of modules and "Game" uses those modules to build a game.
+
+# HIGHLIGHTS
+- Light Weight Game Engine
+- Entity Component System
+- Uses Makefile to Compile
+- Broken into 2x Parts, Game and Engine
+
+# BODY

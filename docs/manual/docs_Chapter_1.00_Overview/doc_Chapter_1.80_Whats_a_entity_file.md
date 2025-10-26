@@ -1,64 +1,75 @@
-# Description: Camera Entity File
-- The Entity file stores information on the objects X,Y,Z Position Coordinates, Rotation, and Scale. This can be used for inital start.
-
-# Example: Camera Entity File
-- TYPE=camera
-- NAME=camera
-- TAG=camera
-- POSITIONX=0
-- POSITIONY=-145
-- POSITIONZ=200
-- ROTATIONX=0
-- ROTATIONY=0
-- ROTATIONZ=0
+# CHAPTER
+1.80
 
 
-# Description: Model Entity File
-- A Entity that uses a Model, is associated with the Shader Asset with an ID.
-- A Entity that uses a Model, is associated with the Model Asset with an ID.
-- The Entity file stores information on the objects X,Y,Z Position Coordinates, Rotation, and Scale
+# TITTLE
+What is a Entity File?
 
-# Example: Model Entity File
-- TYPE=model
-- NAME=N/A
-- TAG=hangar
-- SHADERID=3
-- MODELID=0
-- POSITIONX=0
-- POSITIONY=0
-- POSITIONZ=0
-- SCALEX=250
-- SCALEY=250
-- SCALEZ=250
-- ROTATIONX=0
-- ROTATIONY=0
-- ROTATIONZ=0
-- ENABLERENDER=1
-- ENABLEBOUNDINGBOX=0
 
-# Description: Geometry Entity File
-- A Entity that uses a Model, is associated with the Shader Asset with an ID.
-- The Entity file stores information on the objects X,Y,Z Position Coordinates, Rotation, and Scale
-- The Entity file stores R,G,B color for the Geometry.
+# DESCRIPTION
+ The Source Code is broken into 2x parts "Header File(s) .h" and "Src File(s) .cpp" and are seperated into src and include directories. Its compiled with a makefile ans shipped with the neccessary libraries. To be a self containted project including everything.
 
-# Example: Geometry Entity File
-- TYPE=geometry
-- NAME=N/A
-- TAG=hangar
-- SHADERID=2
-- GEOMETRYTYPE=cube
-- GEOMETRYCOLORRED=0
-- GEOMETRYCOLORGREEN=1
-- GEOMETRYCOLORBLUE=0
-- POSITIONX=0
-- POSITIONY=-163.5
-- POSITIONZ=0
-- SCALEX=740
-- SCALEY=2.5
-- SCALEZ=740
-- ROTATIONX=0
-- ROTATIONY=0
-- ROTATIONZ=0
-- ENABLERENDER=1
-- ENABLEBOUNDINGBOX=0
-- ENABLECOLLIDER=1
+
+# HIGHLIGHTS
+- Camera Entity File: The Entity file stores information on the objects X,Y,Z Position Coordinates, Rotation, and Scale. This can be used for inital start.
+- Model Entity File: A Entity that uses a Model, is associated with the Shader Asset with an ID.
+- Model Entity File: A Entity that uses a Model, is associated with the Model Asset with an ID.
+- Model Entity File: The Entity file stores information on the objects X,Y,Z Position Coordinates, Rotation, and Scale
+- Geometry Entity File: A Entity that uses a Model, is associated with the Shader Asset with an ID.
+- Geometry Entity File: The Entity file stores information on the objects X,Y,Z Position Coordinates, Rotation, and Scale
+- Geometry Entity File: The Entity file stores R,G,B color for the Geometry.
+
+
+# BODY
+
+- Example: Camera Entity File
+    - TYPE=camera
+    - NAME=camera
+    - TAG=camera
+    - POSITIONX=0
+    - POSITIONY=-145
+    - POSITIONZ=200
+    - ROTATIONX=0
+    - ROTATIONY=0
+    - ROTATIONZ=0
+
+- Example: Model Entity File
+    - TYPE=model
+    - NAME=N/A
+    - TAG=hangar
+    - SHADERID=3
+    - MODELID=0
+    - POSITIONX=0
+    - POSITIONY=0
+    - POSITIONZ=0
+    - SCALEX=250
+    - SCALEY=250
+    - SCALEZ=250
+    - ROTATIONX=0
+    - ROTATIONY=0
+    - ROTATIONZ=0
+    - ENABLERENDER=1
+    - ENABLEBOUNDINGBOX=0
+
+
+- Example: Geometry Entity File
+    - TYPE=geometry
+    - NAME=N/A
+    - TAG=hangar
+    - SHADERID=2
+    - GEOMETRYTYPE=cube
+    - GEOMETRYCOLORRED=0
+    - GEOMETRYCOLORGREEN=1
+    - GEOMETRYCOLORBLUE=0
+    - POSITIONX=0
+    - POSITIONY=-163.5
+    - POSITIONZ=0
+    - SCALEX=740
+    - SCALEY=2.5
+    - SCALEZ=740
+    - ROTATIONX=0
+    - ROTATIONY=0
+    - ROTATIONZ=0
+    - ENABLERENDER=1
+    - ENABLEBOUNDINGBOX=0
+    - ENABLECOLLIDER=1

@@ -1,3 +1,24 @@
+# CHAPTER
+1.60
+
+
+# TITTLE
+What is a make file
+
+
+# DESCRIPTION
+ The Source Code is broken into 2x parts "Header File(s) .h" and "Src File(s) .cpp" and are seperated into src and include directories. Its compiled with a makefile ans shipped with the neccessary libraries. To be a self containted project including everything.
+
+
+# HIGHLIGHTS
+
+
+
+# BODY
+
+
+
+
 # What is a Makefile?
 - Acts like a Batch script
 - Acts like a linker in Codeblocks or Visual Studio: linking files and libraries to compiler

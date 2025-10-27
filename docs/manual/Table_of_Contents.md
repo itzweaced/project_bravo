@@ -4,7 +4,7 @@
     - [Chapter 0.20 - Learn Opengl](../manual/docs_Chapter_0.00_HowToMakeProjectBravo/doc_Chapter_0.20_Learn_Opengl.md)
     - [Chapter 0.30 - Combinging 2D Game Engine and Opengl](../manual/docs_Chapter_0.00_HowToMakeProjectBravo/doc_Chapter_0.30_Combine_2D_Game_Engine_and_Opengl.md)
     - [Chapter 0.40 - Entity Component System](../manual/docs_Chapter_0.00_HowToMakeProjectBravo/doc_Chapter_0.40_Entity_Component_System.md)
-    - [Chapter 0.50 - Serialization](../manual/docs_Chapter_0.00_HowToMakeProjectBravo/doc_Chapter_0.50_Serialization.md.md)
+    - [Chapter 0.50 - Serialization](../manual/docs_Chapter_0.00_HowToMakeProjectBravo/doc_Chapter_0.50_Serialization.md)
     - [Chapter 0.60 - Physics](../manual/docs_Chapter_0.00_HowToMakeProjectBravo/doc_Chapter_0.60_Physics.md)
     - [Chapter 0.70 - Audio](../manual/docs_Chapter_0.00_HowToMakeProjectBravo/doc_Chapter_0.70_Audio.md)
     - [Chapter 0.80 - Network](../manual/docs_Chapter_0.00_HowToMakeProjectBravo/doc_Chapter_0.80_Network.md)

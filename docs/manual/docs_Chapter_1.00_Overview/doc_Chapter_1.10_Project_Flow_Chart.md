@@ -1,5 +1,5 @@
 # NAVIGATION
-- [Table of Contents](..\Table_of_Contents.md)
+- [Table of Contents](../Table_of_Contents.md)
 
 # Note
 - Best to open in a Text Editor or on Github's Code tab

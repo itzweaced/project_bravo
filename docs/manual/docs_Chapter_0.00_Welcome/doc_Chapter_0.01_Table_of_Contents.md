@@ -46,7 +46,7 @@
 
 
 - [Chapter 6.00 - How to Make Project Bravo](../manual/docs_Chapter_0.00_HowToMakeProjectBravo)
-    - [Chapter 6.01 - Introduction](../manual/docs_Chapter_0.00_HowToMakeProjectBravo/doc_Chapter_0.01_Introduction.md)
+    - [Chapter 6.00 - Introduction](../manual/docs_Chapter_0.00_HowToMakeProjectBravo/doc_Chapter_0.01_Introduction.md)
     - [Chapter 6.10 - 2D Game Engine](../manual/docs_Chapter_0.00_HowToMakeProjectBravo/doc_Chapter_0.10_2D_Game_Engine.md)
     - [Chapter 6.20 - Learn Opengl](../manual/docs_Chapter_0.00_HowToMakeProjectBravo/doc_Chapter_0.20_Learn_Opengl.md)
     - [Chapter 6.30 - Combinging 2D Game Engine and Opengl](../manual/docs_Chapter_0.00_HowToMakeProjectBravo/doc_Chapter_0.30_Combine_2D_Game_Engine_and_Opengl.md)

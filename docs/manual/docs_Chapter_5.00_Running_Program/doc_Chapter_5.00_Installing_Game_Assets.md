@@ -10,7 +10,7 @@
 Installing Game Assets
 
 # DESCRIPTION
-
+Game Assets are loaded from `./scene` directory located in the Project root directory
 
 # HIGHLIGHTS
 

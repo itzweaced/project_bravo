@@ -20,7 +20,7 @@
     - [Chapter 1.80 - How_to_Edit_Source_Code](../docs_Chapter_1.00_Project_Bravo_Overview/doc_Chapter_1.80_How_to_Edit_Source_Code.md)
 
 
-- [Chapter 2.00 - Project Bravo Engine](../manual/docs_Chapter_2.00_Engine)
+- [Chapter 2.00 - Project Bravo Engine](../docs_Chapter_2.00_Project_Bravo_Engine)
     - [Chapter 2.00 - Engine Flow Chart](../docs_Chapter_2.00_Project_Bravo_Engine/doc_Chapter_2.00_Engine_Flow_Chart.md)
     - [Chapter 2.10 - Engine Overview](../docs_Chapter_2.00_Project_Bravo_Engine/doc_Chapter_2.10_Engine_Overview.md)
     - [Chapter 2.20 - Entity Overview](../docs_Chapter_2.00_Project_Bravo_Engine/doc_Chapter_2.20_Entity_Overview.md)
@@ -50,20 +50,20 @@
         - [Chapter 2.81 - Network: Network Server Class](../docs_Chapter_2.00_Project_Bravo_Engine/doc_Chapter_2.81_Network_Network_Server_Class.md)
 
 
-- [Chapter 3.00 - Project Bravo Game](../manual/docs_Chapter_3.00_Project_Bravo_Game)
+- [Chapter 3.00 - Project Bravo Game](../docs_Chapter_3.00_Project_Bravo_Game)
     - [Chapter 3.00 - Game Overview]()
     - [Chapter 3.10 - How to Make a Game]()
 
 
-- [Chapter 4.00 - Compilling Program](../manual/docs_Chapter_4.00_Compiling_Program)
-    - [Chapter 4.00 Reading Project Bravo's Makefile](./docs/manual/docs_Chapter_4.00_Compiling_Program/doc_Chapter_4.00_Reading_Project_Bravos_Makefile.md)
-    - [Chapter 4.10 Editing Project Bravo's Makefile](./docs/manual/docs_Chapter_4.00_Compiling_Program/doc_Chapter_4.10_Editing_Project_Bravos_Makefile.md)
-    - [Chapter 4.20 How to Compile](./docs/manual/docs_Chapter_4.00_Compiling_Program/doc_Chapter_4.20_How_to_Compile_Source_Code.md)
+- [Chapter 4.00 - Compilling Program](../docs_Chapter_4.00_Compiling_Program)
+    - [Chapter 4.00 Reading Project Bravo's Makefile](../docs_Chapter_4.00_Compiling_Program/doc_Chapter_4.00_Reading_Project_Bravos_Makefile.md)
+    - [Chapter 4.10 Editing Project Bravo's Makefile](../docs_Chapter_4.00_Compiling_Program/doc_Chapter_4.10_Editing_Project_Bravos_Makefile.md)
+    - [Chapter 4.20 How to Compile](../docs_Chapter_4.00_Compiling_Program/doc_Chapter_4.20_How_to_Compile_Source_Code.md)
 
 
-- [Chapter 5.00 - Compilling Program](../manual/docs_Chapter_5.00_Running_Program)
-    - [Chapter 5.00 How to Install Game Assets](./docs/manual/docs_Chapter_5.00_Running_Program/doc_Chapter_5.00_Installing_Game_Assets.md)
-    - [Chapter 5.10 How to Run Program](./docs/manual/docs_Chapter_5.00_Running_Program/doc_Chapter_5.10_How_to_Run_Program.md)
+- [Chapter 5.00 - Compilling Program](../docs_Chapter_5.00_Running_Program)
+    - [Chapter 5.00 How to Install Game Assets](../docs_Chapter_5.00_Running_Program/doc_Chapter_5.00_Installing_Game_Assets.md)
+    - [Chapter 5.10 How to Run Program](../docs_Chapter_5.00_Running_Program/doc_Chapter_5.10_How_to_Run_Program.md)
 
 
 - [Chapter 6.00 - How to Make Project Bravo](../docs_Chapter_6.00_How_to_Make_Project_Bravo)

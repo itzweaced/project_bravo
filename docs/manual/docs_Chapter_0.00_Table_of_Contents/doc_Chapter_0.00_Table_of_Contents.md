@@ -1,5 +1,5 @@
 # NAVIGATION
-- [🏠 Home](../../../readme.md)
+- [🏠 Home](../../../README.md)
 
 # TABLE OF CONTENTS
 - [Chapter 0.00 Table of Contents]()

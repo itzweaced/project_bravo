@@ -3,7 +3,8 @@
 
 # TABLE OF CONTENTS
 - [Chapter 0.00 Table of Contents]()
-
+    - [Chapter 0.00 ](./docs/manual/docs_Chapter_0.00_Welcome/doc_Chapter_0.00_Welcome_to_Project_Bravo.md)
+    - [Chapter 0.01 ](./docs/manual/docs_Chapter_0.00_Welcome/doc_Chapter_0.01_Table_of_Contents.md)
 - [Chapter 1.00 Project Bravo Overview](../manual/docs_Chapter_1.00_Overview)
     - [Chapter 1.10 Flow Chart](../manual/docs_Chapter_1.00_Overview/doc_Chapter_1.10_Project_Flow_Chart.md)
     - [Chapter 1.20 Overview](../manual/docs_Chapter_1.00_Overview/doc_Chapter_1.20_Overview.md)

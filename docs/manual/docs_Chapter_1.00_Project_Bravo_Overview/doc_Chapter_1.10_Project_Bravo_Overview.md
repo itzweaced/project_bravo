@@ -12,8 +12,9 @@ Project Bravo is a liight weight 2D and 3D Game Engine based on the Entity Compo
 
 # HIGHLIGHTS
 - Light Weight Game Engine
-- Entity Component System
+- Entity Component System (ECS)
 - Uses Makefile to Compile
 - Broken into 2x Parts, Game and Engine
+- No Pre Error Checking for Loading Game Assets, The Engine is expecting accurate data when loading game assets, reasoning is speed
 
 # BODY

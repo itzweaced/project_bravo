@@ -5,7 +5,7 @@
 - [Chapter 0.00 - Welcome]()
     - [Chapter 0.00 - Welcome to Project Bravo](../docs_Chapter_0.00_Welcome/doc_Chapter_0.00_Welcome_to_Project_Bravo.md)
     - [Chapter 0.10 - Table of Contents](../docs_Chapter_0.00_Welcome/doc_Chapter_0.10_Table_of_Contents.md)
-    - [Chapter 0.20 - Project Flow Chart](../docs_Chapter_0.00_Project_Bravo_Overview/doc_Chapter_0.20_Project_Bravo_Flow_Chart.md)
+    - [Chapter 0.20 - Project Flow Chart](../docs_Chapter_0.00_Welcome/doc_Chapter_0.20_Project_Bravo_Flow_Chart.md)
 
 - [Chapter 1.00 - Project Bravo Overview](../docs_Chapter_1.00_Project_Bravo_Overview)
     - [Chapter 1.10 - Overview](../docs_Chapter_1.00_Project_Bravo_Overview/doc_Chapter_1.10_Overview.md)

@@ -10,10 +10,11 @@
 How to Run Program
 
 # DESCRIPTION
-This is how to run the Program Executable.
+This is how to run the Program Executable as known as start the Game.
 
 # HIGHLIGHTS
 - The Executable is located inside `./bin/main.exe`
+
 
 # BODY
 - Procedure

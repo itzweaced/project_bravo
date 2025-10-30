@@ -3,15 +3,21 @@
 - 📖 [Table of Contents](../docs_Chapter_0.00_Welcome/doc_Chapter_0.10_Table_of_Contents.md)
 
 
-# Title
-How to Compile Source Code
+# CHAPTER
+5.10
 
-# Description
-This takes the Source Code and creates Executable Program ".exe"
+# TITTLE
+How to Run Program
 
-# Procedure
-1. Download and Install Required External Libraries
-2. Edit MAKEFILE paths to External Libraries to fit your own system
-3. Run Makefile with command "mingw32-make"
-4. The Mingw Compiler will compile the code. If no error are found, a EXE will outputted to the bin directory
-5. Run the EXE with the "./bin/main" within the root directory. Note you will need assets placed inside the scene folder along with Asset Config files and Entity files.
+# DESCRIPTION
+This is how to run the Program Executable.
+
+# HIGHLIGHTS
+- The Executable is located inside `./bin/main.exe`
+
+# BODY
+- Procedure
+    1. Open up Command Prompt on Windows or Terminal on Linux
+    2. Go to Project Bravo's Root Directory inside console
+    3. Make sure Game Assets are installed properly
+    4. Enter command `./bin/main` or `./bin/main.exe`

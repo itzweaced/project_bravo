@@ -1,3 +1,7 @@
+# NAVIGATION
+- [🏠 Home](../../../readme.md)
+
+# TABLE OF CONTENTS
 - [Chapter 0.00 Table of Contents]()
 
 - [Chapter 1.00 Project Bravo Overview](../manual/docs_Chapter_1.00_Overview)

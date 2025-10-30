@@ -4,7 +4,7 @@
 
 
 # CHAPTER
-1.60
+1.50
 
 
 # TITTLE
@@ -13,6 +13,7 @@ What is a Makefile?
 
 # DESCRIPTION
 A Makefile is located in the base directory. Its a file that tells the compiler how to link the file inside the project and 3rd party libraries used.
+
 
 # HIGHLIGHTS
 - Acts like a Batch script

@@ -4,13 +4,15 @@
 
 
 # CHAPTER
-1.70
+1.60
 
 # TITTLE
-What is a Asset File
+What is a Asset File?
+
 
 # DESCRIPTION
 A config file is used associate a loaded asset with an ID that can be used. To be associated with an entity
+
 
 # HIGHLIGHTS
 - Shader Asset File: A config file is used to assign Shader to an ID

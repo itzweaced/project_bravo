@@ -2,7 +2,7 @@
 - 🏠 [Home](../../../README.md)
 
 # TABLE OF CONTENTS
-- [Chapter 0.00 Table of Contents]()
+- [Chapter 0.00 Welcome]()
     - [Chapter 0.00 Welcome to Project Bravo](../docs_Chapter_0.00_Welcome/doc_Chapter_0.00_Welcome_to_Project_Bravo.md)
     - [Chapter 0.01 Table of Contents](../docs_Chapter_0.00_Welcome/doc_Chapter_0.01_Table_of_Contents.md)
 

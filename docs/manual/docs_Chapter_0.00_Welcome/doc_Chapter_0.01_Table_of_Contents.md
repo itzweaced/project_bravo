@@ -30,8 +30,8 @@
 
 
 - [Chapter 3.00 - Project Bravo Game](../manual/docs_Chapter_2.00_Engine)
-    - [Chapter 3.00 Game Overview]()
-    - [Chapter 3.10 How to Make a Game]()
+    - [Chapter 3.00 - Game Overview]()
+    - [Chapter 3.10 - How to Make a Game]()
 
 
 - [Chapter 4.00 - Compilling Program](../manual/docs_Chapter_2.00_Engine)

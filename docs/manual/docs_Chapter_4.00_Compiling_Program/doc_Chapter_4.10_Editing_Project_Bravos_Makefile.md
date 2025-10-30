@@ -10,7 +10,7 @@
 Reading Project Bravo's Makefile
 
 # DESCRIPTION
-
+Section 4 may need to alter for use on ther Operating Systems.
 
 # HIGHLIGHTS
 

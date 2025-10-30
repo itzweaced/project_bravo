@@ -1,3 +1,5 @@
+# Section 1: Declaring External Libraries
+
 glfw_include = ./source_code/libraries/GLFW/include
 glfw_lib = ./source_code/libraries/GLFW/lib
 
@@ -17,6 +19,7 @@ json_include = ./source_code/libraries/JSON/include
 EXTERNAL_DEPENDCIES = -I$(glfw_include) -I$(glad_include) -I$(stb_include) -I$(glm_include) -I$(json_include) -I$(assimp_include)
 
 ################################################################################################################################################################################################################################
+# Section 2: Declaring Header Files
 
 path_include_graphics = ./source_code/include/engine/engine_graphics
 path_include_entity = ./source_code/include/engine/engine_entity
@@ -34,7 +37,7 @@ GAME_DEPENDCIES = -I$(path_include_game)
 LOCAL_DEPENDCIES = $(ENGINE_DEPENDCIES) $(GAME_DEPENDCIES)
 
 ################################################################################################################################################################################################################################
-
+# Section 3: Declaring Source Files
 
 path_src_graphics = ./source_code/src/engine/engine_graphics
 local_src_graphics_opengl = $(path_src_graphics)/opengl/graphics.cpp $(path_src_graphics)/opengl/shader.cpp $(path_src_graphics)/opengl/mesh.cpp 
@@ -69,6 +72,7 @@ LOCAL_SOURCE = $(ENGINE_SOURCE) $(GAME_SOURCE)
 
 
 #################################################################################
+# Section 4: Execute Program
 
 CXX = g++
 CPP = ./source_code/src/app/main.cpp

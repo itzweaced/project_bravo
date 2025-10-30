@@ -41,8 +41,8 @@
 
 
 - [Chapter 5.00 - Compilling Program](../manual/docs_Chapter_2.00_Engine)
-    - [Chapter - 5.10 Installing Game Assets]()
-    - [Chapter - 5.20 Running Program]()
+    - [Chapter 5.10 - Installing Game Assets]()
+    - [Chapter 5.20 - Running Program]()
 
 
 - [Chapter 6.00 - How to Make Project Bravo](../manual/docs_Chapter_0.00_HowToMakeProjectBravo)

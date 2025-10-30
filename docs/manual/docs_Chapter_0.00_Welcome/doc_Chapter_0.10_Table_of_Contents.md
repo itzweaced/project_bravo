@@ -56,14 +56,14 @@
 
 
 - [Chapter 4.00 - Compilling Program](../manual/docs_Chapter_4.00_Compiling_Program)
-- [Chapter 4.00 Reading Project Bravo's Makefile](./docs/manual/docs_Chapter_4.00_Compiling_Program/doc_Chapter_4.00_Reading_Project_Bravos_Makefile.md)
-- [Chapter 4.10 Editing Project Bravo's Makefile](./docs/manual/docs_Chapter_4.00_Compiling_Program/doc_Chapter_4.10_Editing_Project_Bravos_Makefile.md)
-- [Chapter 4.20 How to Compile](./docs/manual/docs_Chapter_4.00_Compiling_Program/doc_Chapter_4.20_How_to_Compile_Source_Code.md)
+    - [Chapter 4.00 Reading Project Bravo's Makefile](./docs/manual/docs_Chapter_4.00_Compiling_Program/doc_Chapter_4.00_Reading_Project_Bravos_Makefile.md)
+    - [Chapter 4.10 Editing Project Bravo's Makefile](./docs/manual/docs_Chapter_4.00_Compiling_Program/doc_Chapter_4.10_Editing_Project_Bravos_Makefile.md)
+    - [Chapter 4.20 How to Compile](./docs/manual/docs_Chapter_4.00_Compiling_Program/doc_Chapter_4.20_How_to_Compile_Source_Code.md)
 
 
 - [Chapter 5.00 - Compilling Program](../manual/docs_Chapter_5.00_Running_Program)
-- [Chapter 5.00 How to Install Game Assets](./docs/manual/docs_Chapter_5.00_Running_Program/doc_Chapter_5.00_Installing_Game_Assets.md)
-- [Chapter 5.10 How to Run Program](./docs/manual/docs_Chapter_5.00_Running_Program/doc_Chapter_5.10_How_to_Run_Program.md)
+    - [Chapter 5.00 How to Install Game Assets](./docs/manual/docs_Chapter_5.00_Running_Program/doc_Chapter_5.00_Installing_Game_Assets.md)
+    - [Chapter 5.10 How to Run Program](./docs/manual/docs_Chapter_5.00_Running_Program/doc_Chapter_5.10_How_to_Run_Program.md)
 
 
 - [Chapter 6.00 - How to Make Project Bravo](../docs_Chapter_6.00_How_to_Make_Project_Bravo)

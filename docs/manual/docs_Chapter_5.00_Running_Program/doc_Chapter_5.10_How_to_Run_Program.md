@@ -18,7 +18,8 @@ This is how to run the Program Executable as known as start the Game.
 
 # BODY
 - Procedure
-    1. Open up Command Prompt on Windows or Terminal on Linux
-    2. Go to Project Bravo's Root Directory inside console
-    3. Make sure Game Assets are installed properly
-    4. Enter command `./bin/main` or `./bin/main.exe`
+1. Make sure `main.exe` is inside `./bin` folder
+2. Open up Command Prompt on Windows or Terminal on Linux
+3. Go to Project Bravo's Root Directory inside console
+4. Make sure Game Assets are installed properly
+5. Enter command `./bin/main` or `./bin/main.exe`

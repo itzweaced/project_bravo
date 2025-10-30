@@ -14,12 +14,13 @@ This is how to run the Program Executable as known as start the Game.
 
 # HIGHLIGHTS
 - The Executable is located inside `./bin/main.exe`
+- The Program searches for Game Asset Data inside `./scene` folder
 
 
 # BODY
 - Procedure
 1. Make sure `main.exe` is inside `./bin` folder
-2. Open up Command Prompt on Windows or Terminal on Linux
-3. Go to Project Bravo's Root Directory inside console
-4. Make sure Game Assets are installed properly
+2. Make sure Game Assets are installed properly inside `./scene` folder
+3. Open up Command Prompt on Windows or Terminal on Linux
+4. Change Directory to Project Bravo's Root Directory inside console
 5. Enter command `./bin/main` or `./bin/main.exe`

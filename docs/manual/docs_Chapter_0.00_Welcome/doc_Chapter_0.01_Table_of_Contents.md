@@ -17,6 +17,7 @@
     - [Chapter 1.80 Whats a Entity File](../docs_Chapter_1.00_Project_Bravo_Overview/doc_Chapter_1.80_Whats_a_entity_file.md)
     - [Chapter 1.90 How_to_Edit_Source_Code](../docs_Chapter_1.00_Project_Bravo_Overview/doc_Chapter_1.90_How_to_Edit_Source_Code.md)
 
+
 - [Chapter 2.00 Project Bravo Engine](../manual/docs_Chapter_2.00_Engine)
     - [Chapter 2.10 ]()
     - [Chapter 2.20 ]()
@@ -27,19 +28,21 @@
     - [Chapter 2.70 ]()
     - [Chapter 2.80 ]()
 
+
 - [Chapter 3.00 Project Bravo Game](../manual/docs_Chapter_2.00_Engine)
-    - [Chapter 3.10 ]()
-    - [Chapter 3.20 ]()
+    - [Chapter 3.00 Game Overview]()
+    - [Chapter 3.10 How to Make a Game]()
 
 
 - [Chapter 4.00 Compilling Program](../manual/docs_Chapter_2.00_Engine)
-    - [Chapter 4.10 ]()
-    - [Chapter 4.20 ]()
-    - [Chapter 4.30 ]()
+    - [Chapter 4.00 Reading Project Bravo's Makefile]()
+    - [Chapter 4.10 Editing Project Bravo's Makefile]()
+    - [Chapter 4.20 How to Compile Source Code]()
+
 
 - [Chapter 5.00 Compilling Program](../manual/docs_Chapter_2.00_Engine)
-    - [Chapter 5.10 ]()
-    - [Chapter 5.20 ]()
+    - [Chapter 5.10 Installing Game Assets]()
+    - [Chapter 5.20 Running Program]()
 
 
 - [Chapter 6.00 - How to Make Project Bravo](../manual/docs_Chapter_0.00_HowToMakeProjectBravo)

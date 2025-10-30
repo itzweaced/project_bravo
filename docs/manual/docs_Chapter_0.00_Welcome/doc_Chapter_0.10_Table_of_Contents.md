@@ -50,20 +50,20 @@
         - [Chapter 2.81 - Network: Network Server Class](../docs_Chapter_2.00_Project_Bravo_Engine/doc_Chapter_2.81_Network_Network_Server_Class.md)
 
 
-- [Chapter 3.00 - Project Bravo Game](../manual/docs_Chapter_2.00_Engine)
+- [Chapter 3.00 - Project Bravo Game](../manual/docs_Chapter_3.00_Project_Bravo_Game)
     - [Chapter 3.00 - Game Overview]()
     - [Chapter 3.10 - How to Make a Game]()
 
 
-- [Chapter 4.00 - Compilling Program](../manual/docs_Chapter_2.00_Engine)
-    - [Chapter 4.00 - Reading Project Bravo's Makefile]()
-    - [Chapter 4.10 - Editing Project Bravo's Makefile]()
-    - [Chapter 4.20 - How to Compile Source Code]()
+- [Chapter 4.00 - Compilling Program](../manual/docs_Chapter_4.00_Compiling_Program)
+- [Chapter 4.00 Reading Project Bravo's Makefile](./docs/manual/docs_Chapter_4.00_Compiling_Program/doc_Chapter_4.00_Reading_Project_Bravos_Makefile.md)
+- [Chapter 4.10 Editing Project Bravo's Makefile](./docs/manual/docs_Chapter_4.00_Compiling_Program/doc_Chapter_4.10_Editing_Project_Bravos_Makefile.md)
+- [Chapter 4.20 How to Compile](./docs/manual/docs_Chapter_4.00_Compiling_Program/doc_Chapter_4.20_How_to_Compile_Source_Code.md)
 
 
-- [Chapter 5.00 - Compilling Program](../manual/docs_Chapter_2.00_Engine)
-    - [Chapter 5.10 - Installing Game Assets]()
-    - [Chapter 5.20 - Running Program]()
+- [Chapter 5.00 - Compilling Program](../manual/docs_Chapter_5.00_Running_Program)
+- [Chapter 5.00 How to Install Game Assets](./docs/manual/docs_Chapter_5.00_Running_Program/doc_Chapter_5.00_Installing_Game_Assets.md)
+- [Chapter 5.10 How to Run Program](./docs/manual/docs_Chapter_5.00_Running_Program/doc_Chapter_5.10_How_to_Run_Program.md)
 
 
 - [Chapter 6.00 - How to Make Project Bravo](../docs_Chapter_6.00_How_to_Make_Project_Bravo)

@@ -17,7 +17,7 @@ Project Bravo's Source Code
 # HIGHLIGHTS
 - Header Files `.h` can be found in `./source_code/include/...`
 - Source Files `.cpp` can be found in `./source_code/src/...`
-- Libraries can be found in `./source_code/libraries/...`
+- 3rd Party External Libraries can be found in `./source_code/libraries/...`
 
 # BODY
 

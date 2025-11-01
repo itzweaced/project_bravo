@@ -43,7 +43,7 @@ Project Bravo's Source Code
             - `Geometry` Spawns Geometery(s) Cubes
             - `Model` Spawns Models
         - Graphics: Handles Opengl Pipeline and Data flows from Game
-            - `Graphics` Is the Main Handle for the Graphics Pipeline, Opengl is initiated here and Data is sent to the render function
+            - `Graphics` Main Handle for the Graphics Pipeline
             - `Mesh` Is used to draw meshes from loaded models
             - `Shader` Is used to handle Opengl Shaders
         - Network: Handles Networking for Server and Client
@@ -51,10 +51,10 @@ Project Bravo's Source Code
         - Physics: Handles anything Physics Related
             - `Collider` Handles Axis Alligned Bouding Box
             - `Collision` Check for Axis Alligned Bounding Box Collsions between to two AABB colliders
-            - `Raycast` 3D Raycast , for shooting
+            - `Raycast` 3D Raycast Collision check for shooting
             - `Rigid Body` Used to create simple Motion
         - Scene: Handles the loading of Models and Entity Scene Game Data
-            - `Scene Load` Loads Entity Files. This checks `./scene/entities/...` and reads the `.entity` file to create a Scene
+            - `Scene Load` Loads Entity Files
             - `Scene Save` Saves Entities to Files
             - `Config Load` Load Asset File Data
         - User: Handles user input interface for periphials

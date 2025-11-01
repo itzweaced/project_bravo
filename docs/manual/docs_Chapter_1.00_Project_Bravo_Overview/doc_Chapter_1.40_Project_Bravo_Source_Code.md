@@ -39,9 +39,9 @@ Project Bravo's Source Code
         - Audio: Not Operational
         - Entitiy: All spawnable objects in 2D and 3D world are referred to as a Entity
             - `Entity` Defines what a Entity is and contains
-            - `Camera` Spawns Camera(s)
-            - `Geometry` Spawns Geometery(s) Cubes
-            - `Model` Spawns Models
+            - `Camera` Camera Class Handle
+            - `Geometry` Geometery Class Handle for Cube
+            - `Model` Model Class Handle
         - Graphics: Handles Opengl Pipeline and Data flows from Game
             - `Graphics` Main Handle for the Graphics Pipeline
             - `Mesh` Is used to draw meshes from loaded models

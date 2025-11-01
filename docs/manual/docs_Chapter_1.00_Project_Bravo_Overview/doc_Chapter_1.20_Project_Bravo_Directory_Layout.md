@@ -68,9 +68,3 @@ When you clone the repo, the repo should contain everything you need and thought
         - `./source_code/src` Contains Source files
         - `./source_code/libraries` Contains External Libraries
 
-#
-
-- Project Bravo Source Code Layout
-    - ![Project Bravo Screenshot](../../../docs/images/project_bravo_layout_source_code.png "Project Bravo Screeshot")
-    - Its made up of two parts 'Game' and 'Enginge'
-        - Engine contains components that Game can use to build a Game

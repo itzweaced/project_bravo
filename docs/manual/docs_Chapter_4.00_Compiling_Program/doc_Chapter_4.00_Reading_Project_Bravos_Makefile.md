@@ -18,3 +18,20 @@ This describes how to read Project Bravo's Makefile.
 - Section 4 of the Makefile, brings it all together as a command
 
 # BODY
+
+
+- Section 1 of the Makefile
+    - ![Project Bravo Screenshot](../../../docs/images/makefile_section_1.png "Project Bravo Screenshot")
+    - 3rd Party External Libraies
+    - Delcaring paths for 3rd Party External Libraies
+- Section 2 of the Makefile
+    - ![Project Bravo Screenshot](../../../docs/images/makefile_section_2.png "Project Bravo Screenshot")
+    - Local Project Header Files
+    - Declaring paths for Project Header File 
+- Section 3 of the Makefile
+    - ![Project Bravo Screenshot](../../../docs/images/makefile_section_3.png "Project Bravo Screenshot")
+    - Local Source Files
+- Section 4 of the Makefile
+    - ![Project Bravo Screenshot](../../../docs/images/makefile_section_4.png "Project Bravo Screenshot")
+    - Command Makefile Prompt
+    - This is where everything is put together as CLI command to be executed

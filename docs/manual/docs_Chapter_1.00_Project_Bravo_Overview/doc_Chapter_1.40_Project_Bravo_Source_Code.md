@@ -21,6 +21,13 @@ Project Bravo's Source Code
 
 # BODY
 
+- Source Code Directory Layout
+    - ![Project Bravo Screenshot](../../../docs/images/project_bravo_layout_directory_source_code.png "Project Bravo Screenshot")
+    - Directory contains the source code to build the engine and the game
+        - `./source_code/include` Contains Header files 
+        - `./source_code/src` Contains Source files
+        - `./source_code/libraries` Contains External Libraries
+
 - Project Bravo Source Code Flow Chart
     - ![Project Bravo Screenshot](../../../docs/images/project_bravo_layout_source_code.png "Project Bravo Screeshot")
     - Its made up of two parts 'Game' and 'Enginge'

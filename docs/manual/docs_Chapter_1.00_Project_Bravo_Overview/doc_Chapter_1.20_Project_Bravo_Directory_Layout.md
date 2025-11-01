@@ -38,23 +38,30 @@ When you clone the repo, the repo should contain everything you need and thought
 #
 
 - Docs Directory Layout
-    - This is where the Manual to Project Bravo. Along with file templates for `.asset` file(s) and `.entity` file(s) 
+    - Project Bravo's User Manual
+    - File Templates for `.asset` file(s) and `.entity` file(s) 
     - ![Project Bravo Screenshot](../../../docs/images/project_bravo_layout_directory_docs.png "Project Bravo Screenshot")
 
 #
 
 - Scene Directory Layout
-    - Directory contains Game Asset Files, such as Models, Images, Audio, `.asset` file(s), `.entity` file(s). This folder and its structure is essential. When the program is runned is seeks data in this folder. 
+    - Directory contains Game Asset Files, such as Models, Images, Audio, `.asset` file(s), `.entity` file(s)
+    - The Scene Directory and it's Sub Directory Structure is essential
+    - The program looks for data in this folder during loading 
     - ![Project Bravo Screenshot](../../../docs/images/project_bravo_layout_directory_scene.png "Project Bravo Screenshot")
 
 #
 
 - Source Code Directory Layout
-    - Directory contains the source code to build the engine and the game. Header files are located in `./source_code/include` and Source file are located in `./source_code/src`. External Libraries are located in `./source_code/libraries`.
+    - Directory contains the source code to build the engine and the game
+    - Header files are located in `./source_code/include`
+    - Source file are located in `./source_code/src`
+    - External Libraries are located in `./source_code/libraries`
     - ![Project Bravo Screenshot](../../../docs/images/project_bravo_layout_directory_source_code.png "Project Bravo Screenshot")
 
 #
 
 - Project Bravo Source Code Layout
-    - Its made up of two parts 'Game' and 'Enginge'. Engine contains component that Game can use to build a Game
+    - Its made up of two parts 'Game' and 'Enginge'
+    - Engine contains components that Game can use to build a Game
     - ![Project Bravo Screenshot](../../../docs/images/project_bravo_layout_source_code.png "Project Bravo Screeshot")

@@ -42,13 +42,13 @@ Project Bravo's Source Code
             - `Camera` Spawns Camera(s)
             - `Geometry` Spawns Geometery(s) Cubes
             - `Model` Spawns Models
-        - Graphics: Handles Opengl Pipeline, Data flows from Game
+        - Graphics: Handles Opengl Pipeline and Data flows from Game
             - `Graphics` Is the Main Handle for the Graphics Pipeline, Opengl is initiated here and Data is sent to the render function
             - `Mesh` Is used to draw meshes from loaded models
             - `Shader` Is used to handle Opengl Shaders
         - Network: Handles Networking for Server and Client
             - `Network Server` Handles Game Server, Work In Progress
-        - Physics: Handle anything physics related like Axis Aligned Bounding Box Collider, 3D Shooter Raycast, Rigid Body Motion, and Collisions.
+        - Physics: Handles anything Physics Related
             - `Collider` Handles Axis Alligned Bouding Box
             - `Collision` Check for Axis Alligned Bounding Box Collsions between to two AABB colliders
             - `Raycast` 3D Raycast , for shooting

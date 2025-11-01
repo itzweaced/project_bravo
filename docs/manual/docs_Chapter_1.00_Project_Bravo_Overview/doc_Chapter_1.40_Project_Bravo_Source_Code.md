@@ -38,8 +38,25 @@ Project Bravo's Source Code
     - Its made up of two parts 'Game' and 'Enginge'
         - Audio: Not Operational
         - Entitiy: All spawnable objects in 2D and 3D world are referred to as a Entity
-        - Graphics: Handles Opengl Pipeline, Entity list is sent down and draws based on the Entit's properties
+            - `Entity` Defines what a Entity is and contains
+            - `Camera` Spawns Camera(s)
+            - `Geometry` Spawns Geometery(s) Cubes
+            - `Model` Spawns Models
+        - Graphics: Handles Opengl Pipeline, Data flows from Game
+            - `Graphics` Is the Main Handle for the Graphics Pipeline, Opengl is initiated here and Data is sent to the render function
+            - `Mesh` Is used to draw meshes from loaded models
+            - `Shader` Is used to handle Opengl Shaders
         - Network: Handles Networking for Server and Client
+            - `Network Server` Handles Game Server, Work In Progress
         - Physics: Handle anything physics related like Axis Aligned Bounding Box Collider, 3D Shooter Raycast, Rigid Body Motion, and Collisions.
+            - `Collider` Handles Axis Alligned Bouding Box
+            - `Collision` Check for Axis Alligned Bounding Box Collsions between to two AABB colliders
+            - `Raycast` 3D Raycast , for shooting
+            - `Rigid Body` Used to create simple Motion
         - Scene: Handles the loading of Models and Entity Scene Game Data
+            - `Scene Load` Loads Entity Files. This checks `./scene/entities/...` and reads the `.entity` file to create a Scene
+            - `Scene Save` Saves Entities to Files
+            - `Config Load` Load Asset File Data
         - User: Handles user input interface for periphials
+            - `Keyboard` Handles User Keyboard input
+            - `Mouse` Handles User Mouse Input

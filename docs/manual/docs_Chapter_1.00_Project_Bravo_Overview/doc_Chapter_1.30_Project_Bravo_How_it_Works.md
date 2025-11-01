@@ -25,3 +25,8 @@ Project Bravo, How it Works?
     - Where App is at the Top, it the actual application for system
     - Then there is Game the Middle, it the actual game area that uses engine to create to hearts content. You can afford to be a little sloppy.
     - Then there is Engine the Bottom, it's the foundation. Its made of components that can be used to build a game. This is where features are added. I see this as the level that talks to the machine/hardware.
+
+1. Loading Game Asset Data
+2. Loading Entity Data
+3. Building a Scene
+4. Saving Entity Data

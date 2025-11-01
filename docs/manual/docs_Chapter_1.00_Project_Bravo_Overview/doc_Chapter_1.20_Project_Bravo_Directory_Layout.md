@@ -34,6 +34,7 @@ When you clone the repo, the repo should contain everything you need and thought
 - Bin Directory Layout
     - This is where the `.exe` and `.dll` files are located, neccessary to run the game program.
     - `./bin/main.exe` Is the Main Program, and what the Makefile and Compiler outputs once compiled
+    - The Main Program can be only called when you are located in the root directory via Command Prompt or Terminal
     - ASSIMP uses `./bin/libassimp-6.dll`
     - ![Project Bravo Screenshot](../../../docs/images/project_bravo_layout_directory_bin.png "Project Bravo Screenshot")
 

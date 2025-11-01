@@ -45,9 +45,10 @@ When you clone the repo, the repo should contain everything you need and thought
 - Docs Directory Layout
     - ![Project Bravo Screenshot](../../../docs/images/project_bravo_layout_directory_docs.png "Project Bravo Screenshot")
     - Project Bravo's User Manual, Images, and File Templates
+        - `./docs/development` Project Bravo Development Tasks
         - `./docs/images` Project Bravo Images for Manual
         - `./docs/manual` Project Bravo User Manual
-        - `/docs/templates` File Templates for `.asset` file(s) and `.entity` file(s) 
+        - `./docs/templates` File Templates for `.asset` file(s) and `.entity` file(s) 
 
 #
 

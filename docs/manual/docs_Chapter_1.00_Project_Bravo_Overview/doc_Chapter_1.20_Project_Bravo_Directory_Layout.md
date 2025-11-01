@@ -15,19 +15,16 @@ Project Bravo Directory Layout
 When you clone the repo, the repo should contain everything you need and thought as the root Project directory. Inside the `./scene` is used by the engine to build a scene. The Engine's source code is inside...........`./source_code` Documents can be found ing `./doc`. And the actual program under `./bin/main.exe`
 
 # HIGHLIGHTS
-- `./bin` Directory contains `.exe` and `.dll` files
-- `./docs` Directory contains Manual and File Templates for `.asset` and `.entity` files
-- `./scene` Directory contains Game Asset Files, such as Models, Images, Audio, `.asset` file(s), `.entity` file(s)
+- `./bin` Directory contains Main Program
+- `./docs` Directory contains Manual and File Templates
+- `./scene` Directory contains Game Asset Files
 - `./source_code` Directory contains the Game Engine's source code
-- `./LICENSE.md` File containing Licensening Details
-- `./Makefile` File is called a Makefile and used to compile Source Code
-- `./README` File describing project
 
 # BODY
 
 - Root Directory Layout
     - This is Project Bravo's root Directory and contains everything needed
-    - `./bin` Directory contains `.exe` and `.dll` files
+    - `./bin` Directory contains Main Program`.exe` and `.dll` files
     - `./docs` Directory contains Manual and File Templates for `.asset` and `.entity` files
     - `./scene` Directory contains Game Asset Files, such as Models, Images, Audio, `.asset` file(s), `.entity` file(s)
     - `./source_code` Directory contains the Game Engine's source code

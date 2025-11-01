@@ -50,7 +50,7 @@ Project Bravo's Source Code
             - `Network Server` Handles Game Server, Work In Progress
         - Physics: Handles anything Physics Related
             - `Collider` Handles Axis Alligned Bouding Box
-            - `Collision` Check for Axis Alligned Bounding Box Collsions between to two AABB colliders
+            - `Collision` Check for Axis Alligned Bounding Box collsion between to two AABB colliders
             - `Raycast` 3D Raycast Collision check for shooting
             - `Rigid Body` Used to create simple Motion
         - Scene: Handles the loading of Models and Entity Scene Game Data

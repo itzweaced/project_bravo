@@ -26,7 +26,14 @@ When you clone the repo, the repo should contain everything you need and thought
 # BODY
 
 - Root Directory Layout
-    - This is Project Bravo's root Directory containing everything needed.
+    - This is Project Bravo's root Directory and contains everything needed
+    - `./bin` Directory contains `.exe` and `.dll` files
+    - `./docs` Directory contains Manual and File Templates for `.asset` and `.entity` files
+    - `./scene` Directory contains Game Asset Files, such as Models, Images, Audio, `.asset` file(s), `.entity` file(s)
+    - `./source_code` Directory contains the Game Engine's source code
+    - `./LICENSE.md` File containing Licensening Details
+    - `./Makefile` File is called a Makefile and used to compile Source Code
+    - `./README` File describing project
     - ![Project Bravo Screenshot](../../../docs/images/project_bravo_layout_directory.png "Project Bravo Screenshot")
 
 #

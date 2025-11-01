@@ -12,7 +12,7 @@ Project Bravo, How it Works?
 
 
 # DESCRIPTION
-
+This page will describe how Project Bravo's Engine works. Starting how game assets are loaded into the engine and then assigned a Asset ID. To how scene are built using the entity files.
 
 
 # HIGHLIGHTS
@@ -21,12 +21,46 @@ Project Bravo, How it Works?
 
 
 # BODY
-- I like visualizing this project like a pyramid
-    - Where App is at the Top, it the actual application for system
-    - Then there is Game the Middle, it the actual game area that uses engine to create to hearts content. You can afford to be a little sloppy.
-    - Then there is Engine the Bottom, it's the foundation. Its made of components that can be used to build a game. This is where features are added. I see this as the level that talks to the machine/hardware.
 
-1. Loading Game Asset Data
-2. Loading Entity Data
-3. Building a Scene
-4. Saving Entity Data
+1. Starting Program
+    - ![Project Bravo Screenshot](../../../docs/images/command_line_run.png "Project Bravo Screenshot")
+    - You start/run the program, with enter `./bin/main.exe` or `./bin/main` from the Project Bravo's root directoryS
+
+2. Program Initialization
+    - GLFW + GLAD are Initialized
+    - OpenGL Window Size is Defined
+
+3. Loading Game Asset Data
+    - ![Project Bravo Screenshot](../../../docs/images/project_bravo_layout_directory_scene.png "Project Bravo Screenshot")
+        - Contains Model Files for Game Assets
+        - Contains Image Files for Game Assets
+        - Contains Audio Files for Game Assets 
+    - ![Project Bravo Screenshot](../../../docs/images/project_bravo_layout_directory_scene_config_shaders.png "Project Bravo Screenshot")
+        - The Engine looks for `.asset` files
+        - The Shader Asset file contains file paths to vertex and fragment shader
+        - The Shader Asset file contains ID, that can be associated with a Entity 
+    - ![Project Bravo Screenshot](../../../docs/images/project_bravo_layout_directory_scene_config_models.png "Project Bravo Screenshot")
+        - The Engine looks for `.asset` files
+        - The Model Asset file contains file path to model
+        - The Model Asset file contains ID, that can be associated with a Entity
+
+4. Loading Entity Data
+    - ![Project Bravo Screenshot](../../../docs/images/project_bravo_layout_directory_scene_entities.png "Project Bravo Screenshot")
+        - The Engine looks for `.entity` files adding them to a list
+        - The Entity file support spawn Entities for ...
+            - Model(s)
+                - Contains Shader ID to be linked with Shader
+                - Contains Model ID to be linked with Model
+                - Contains Scene Properties that can be used or edited
+            - Geometry(s)
+                - Contains Shader ID to be linked with Shader
+                - Contains Scene Properties that can be used or edited
+            - Camera(s)
+                - Contains Scene Properties that can be used or edited
+
+5. Building a Scene
+    - ![Project Bravo Screenshot](../../../docs/images/file_entity_model.png "Project Bravo Screenshot")
+        - The engine loops through the Entity list, using the Scene Properties set Position, Rotation, and Scale
+
+6. Saving Entities
+    - If needed entities that were changed during runtime can be saved to a temptentities directory inside of scene

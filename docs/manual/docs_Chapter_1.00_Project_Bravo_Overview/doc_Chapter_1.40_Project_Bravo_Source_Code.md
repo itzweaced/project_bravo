@@ -17,26 +17,6 @@ Project Bravo's Source Code
     - Then there is Game the Middle, it the actual game area that uses engine to create to hearts content. You can afford to be a little sloppy.
     - Then there is Engine the Bottom, it's the foundation. Its made of components that can be used to build a game. This is where features are added. I see this as the level that talks to the machine/hardware.
 
-# STONEDUFODUDE
-
-HELLOOOOOOOO FOLKSSSSSSSSSSSSSSSSSSSSSS!!!!!
-ITS FINALLY NICE TO MEET YOU OFFFICALLLLYYYYYY
-STONEDUFODUDE HERE. THe Designer Philopsher and Creatish of a MUtt of pile shite shoew here CAlled Project Beaver I mean Project Bravo XD
-Well If your reading and your ass better not be XP. COngrats youll find my only message tp yu 
-Weell, What to sayy. Hired by the exeCutive, thinks I would not be Busizz safe, due to my person ality. So I am not allow to be offical
-Luckyly he may allegedly be something XD Not Sure Bastard claims to have a plan...What Ever the fuck that Means????, program mer is def not one of THose. Ha Ha Ha SOB. Jokes on HIM
-I wil ll survive!!!!!
-
-So any ways this SOB, hires with the iNtent saying I need you to make game From Scratch. Easy Jut use ************ He says na Cost To mUch Time. FROM SCRATCH BASTARD DID YOU HEAR OF THE HOORROR STORIES in the GAME biz. They litterally BBQ COWORKER S over the FIR E PIT and EaTTING them for placinG a BoX in a map tkINg awasy it MAjestY. The Must Be TalKing TO the ALLigatorS in the MineS Again, 
-
-I say it may taje ************ Yeats ANd even Then
-I have No fucking Idea hoW a CompuTer woRks. I just ReasEarch UFOs  -_-. He SaiD did you plaY video GAmes when you were younger? I replied sure evry1 did. Then You got This.
-AsHole ...... Well uts ********** years aNf stLl Got shit wok ing
-
-Wll Anways ther Is my lfe StrY
-Rember GreyS Are AlwayS Wtaching, The TRiEngle always know.
-
-- StOnedUFOdude Out...
 
 # HIGHLIGHTS
 - Header Files `.h` can be found in `./source_code/include/...`

@@ -18,6 +18,9 @@ Project Bravo's Source Code
 - Header Files `.h` can be found in `./source_code/include/...`
 - Source Files `.cpp` can be found in `./source_code/src/...`
 - 3rd Party External Libraries can be found in `./source_code/libraries/...`
+- Game is where game logic is hard coded to make a game
+- Engine is made up of Components that Game can use to make a game
+- Source Code is compiled with a Makefile
 
 # BODY
 
@@ -40,4 +43,3 @@ Project Bravo's Source Code
         - Physics: Handle anything physics related like Axis Aligned Bounding Box Collider, 3D Shooter Raycast, Rigid Body Motion, and Collisions.
         - Scene: Handles the loading of Models and Entity Scene Game Data
         - User: Handles user input interface for periphials
-

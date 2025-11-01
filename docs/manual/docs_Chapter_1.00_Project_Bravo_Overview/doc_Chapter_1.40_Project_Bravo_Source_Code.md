@@ -21,8 +21,14 @@ Project Bravo's Source Code
 
 # BODY
 
-- Project Bravo Source Code Layout
+- Project Bravo Source Code Flow Chart
     - ![Project Bravo Screenshot](../../../docs/images/project_bravo_layout_source_code.png "Project Bravo Screeshot")
     - Its made up of two parts 'Game' and 'Enginge'
-        - Engine contains components that Game can use to build a Game
+        - Audio: Not Operational
+        - Entitiy: All spawnable objects in 2D and 3D world are referred to as a Entity
+        - Graphics: Handles Opengl Pipeline, Entity list is sent down and draws based on the Entit's properties
+        - Network: Handles Networking for Server and Client
+        - Physics: Handle anything physics related like Axis Aligned Bounding Box Collider, 3D Shooter Raycast, Rigid Body Motion, and Collisions.
+        - Scene: Handles the loading of Models and Entity Scene Game Data
+        - User: Handles user input interface for periphials
 

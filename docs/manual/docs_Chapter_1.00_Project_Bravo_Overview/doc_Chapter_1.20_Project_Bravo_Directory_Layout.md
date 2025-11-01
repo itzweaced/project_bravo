@@ -37,31 +37,36 @@ When you clone the repo, the repo should contain everything you need and thought
 - Bin Directory Layout
     - ![Project Bravo Screenshot](../../../docs/images/project_bravo_layout_directory_bin.png "Project Bravo Screenshot")
     - This is where the Main Program `.exe` and `.dll` files are located, neccessary to run the game program.
-        - The Main program is located at `./bin/main.exe`. This is what the Makefile and Compiler outputs
-        - ASSIMP uses `./bin/libassimp-6.dll`
+        -  `./bin/main.exe` Main Program
+        - `./bin/libassimp-6.dll` ASSIMP Dynamic Linked Library
 
 #
 
 - Docs Directory Layout
     - ![Project Bravo Screenshot](../../../docs/images/project_bravo_layout_directory_docs.png "Project Bravo Screenshot")
     - Project Bravo's User Manual, Images, and File Templates
-        - File Templates for `.asset` file(s) and `.entity` file(s) 
+        - `./docs/images` Project Bravo Images for Manual
+        - `./docs/manual` Project Bravo User Manual
+        - `/docs/templates` File Templates for `.asset` file(s) and `.entity` file(s) 
 
 #
 
 - Scene Directory Layout
     - ![Project Bravo Screenshot](../../../docs/images/project_bravo_layout_directory_scene.png "Project Bravo Screenshot")
-    - Directory contains Game Asset Files, such as Models, Images, Audio, `.asset` file(s), `.entity` file(s)
-        - The Scene Directory and it's Sub Directory Structure is essential
-        - The program looks for data in this folder during loading 
+    - Directory contains Game Asset Files. The Scene Directory and it's Sub Directory Structure is essential and which the program looks for data in during loading. 
+        - `./scene/assets` Contains Model, Audio, Image file(s)
+        - `./scene/config` Contains `.assets` file(s) which is used to load Models or Shaders
+        - `./scene/entities` Contains `.entity` file(s) which is used to build a scene.
+
 #
 
 - Source Code Directory Layout
     - ![Project Bravo Screenshot](../../../docs/images/project_bravo_layout_directory_source_code.png "Project Bravo Screenshot")
     - Directory contains the source code to build the engine and the game
-        - Header files are located in `./source_code/include`
-        - Source file are located in `./source_code/src`
-        - External Libraries are located in `./source_code/libraries`
+        - `./source_code/include` Contains Header files 
+        - `./source_code/src` Contains Source files
+        - `./source_code/libraries` Contains External Libraries
+
 #
 
 - Project Bravo Source Code Layout

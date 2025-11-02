@@ -34,6 +34,12 @@ Project Bravo's Source Code
         - `./source_code/include` Contains Header files 
         - `./source_code/src` Contains Source files
         - `./source_code/libraries` Contains External Libraries
+            - GLFW - Version 3.3
+            - ASSIMP - Version 6.0.2
+            - GLAD - Version 0.1.36
+            - STB Image - Version 2.27
+            - OpenGL Mathematics (GLM) - Version 1.0.1
+            - Niels Lohmann JSON - Version 3.11.2
 
 #
 

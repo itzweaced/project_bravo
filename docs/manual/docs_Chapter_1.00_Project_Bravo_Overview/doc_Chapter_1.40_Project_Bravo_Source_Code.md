@@ -33,7 +33,7 @@ Project Bravo's Source Code
     - Directory contains the source code to build the engine and the game
         - `./source_code/include` Contains Header files 
         - `./source_code/src` Contains Source files
-        - `./source_code/libraries` Contains External Libraries
+        - `./source_code/libraries` Contains 3rd Party External Libraries
             - GLFW - Version 3.3
             - ASSIMP - Version 6.0.2
             - GLAD - Version 0.1.36
@@ -45,7 +45,7 @@ Project Bravo's Source Code
 
 - Project Bravo Source Code Flow Chart
     - ![Project Bravo Screenshot](../../../docs/images/project_bravo_layout_source_code.png "Project Bravo Screeshot")
-    - Its made up of two parts 'Game' and 'Enginge'
+    - Its made up of two parts 'Game' and 'Enginge', both `./source_code/include` and `./source_code/src` directories are structured the same way.
         - Audio: Not Operational
         - Entitiy: All spawnable objects in 2D and 3D world are referred to as a Entity
             - `Entity` Defines what a Entity is and contains
